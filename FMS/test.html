@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>test</title>
+    <style type="text/css">
+        img{width: 150px;height: 150px;display: block;margin-top: 10px;}
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="username"/>
+    <input type="password" id="password"/>
+    <button id="btn">登录</button>
+    <!-- <img src="http://localhost:1010/temp/default.jpg" alt="" /> -->
+    <div id="goodslist"></div>
+
+    <script type="text/javascript">
+        $(function(){
+            $.get('http://10.3.136.179:1010/categorys',res=>{
+                console.log(res);
+                var $ul=$('<ul/>');
+                var html=res.data.map(function(item){
+                    return `<li>
+                        <img src="${item.img_url}">
+                        <h3>${item.name}</h3>
+                    </li>`
+                }).join('');
+                $ul.html(html).appendTo("#goodslist");
+            })
+        })
+    </script>
+</body>
+</html>
