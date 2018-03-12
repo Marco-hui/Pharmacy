@@ -1,0 +1,22 @@
+{
+    "en": {
+        "proname":"Proname",
+        "size": "Size",   
+        "price": "Price",   
+        "oprice": "Oprice",   
+        "store": "Store",   
+        "proof": "Proof",   
+        "factory": "Factory",   
+        "server": "Server" 
+    },
+    "cn": {
+        "proname":"名称",
+        "size": "规格",   
+        "price": "价格",   
+        "oprice": "原价",   
+        "store": "数量",   
+        "proof": "国药准字",   
+        "factory": "生产厂商",   
+        "server": "销售商" 
+    }
+}

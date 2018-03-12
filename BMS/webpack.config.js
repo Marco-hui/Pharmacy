@@ -11,6 +11,18 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(gif|png|jpg|woff|svg|ttf|eot)\??.*$/,
+          // loader: "style-loader!css-loader"
+          // loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+          loader: {
+              loader: 'url-loader',
+              options: {
+                  limit: 8192,
+                  name: './resource/[name].[ext]'
+              }
+          }
+        },
+      {
         test: /\.css$/,
         use: [
           'vue-style-loader',
