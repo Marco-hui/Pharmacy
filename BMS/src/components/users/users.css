@@ -1,0 +1,17 @@
+.users th{
+    height: 30px;
+    padding: 0 5px;
+    border-right: 1px solid #005500;
+}
+.users td{
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.users tr:nth-child(odd){
+    background: #DDDDDD;
+}
+.users tr{
+    line-height: 40px;
+}

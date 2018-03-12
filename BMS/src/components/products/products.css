@@ -1,0 +1,33 @@
+.products{
+    padding-top: 46px;
+    overflow: hidden;
+    height: 600px;
+}
+.products thead{
+    top: 74px;
+    left: 134px;
+    position: fixed;
+    background: #fff;
+}
+.products th{
+    height: 30px;
+    /*padding: 0 10px;*/
+    width: 138px;
+    border-right: 1px solid #005500;
+}
+.products tbody{
+    height: 600px;
+    overflow: auto;
+}
+.products tr:nth-child(odd){
+    background: #DDDDDD;
+}
+.products tr{
+    line-height: 40px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.products td{
+    width: 200px;
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+}
