@@ -45,7 +45,7 @@ module.exports={
         if(client){
             return new Promise((resolve,reject)=>{
                 var col = client.db(dbName).collection(coll_name);
-                col.update(condition,{$set:{data}}).then((result,err)=>{
+                col.update(condition,{$set:data}).then((result,err)=>{
                     if(err){
                         reject(err);
                     }else{

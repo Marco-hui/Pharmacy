@@ -27,35 +27,11 @@
     <script type="text/javascript">
         $(function(){
             $("#btn").on('click',function(){
-                var data = [
-                    {
-                        "proname" : "咪唑立宾片(布累迪宁)",
-                        "size" : "50mg*100片",
-                        "price" : "1721.00",
-                        "oprice" : "1716.00",
-                        "imgurl" : "src/assets/img/products/c1_3.jpg",
-                        "store" : 100,
-                        "proof" : "国药准字H10930015",
-                        "factory" : "日本Asahikasei Pharma Corpora",
-                        "server" : "药房网",
-                        "category" : "抗排异药物",
-                        "category_id" : 1
-                    },
-                    {
-                        "proname" : "吗替麦考酚酯分散片(赛可平)",
-                        "size" : "0.25g*40片",
-                        "price" : "185.80",
-                        "oprice" : "381.00",
-                        "imgurl" : "src/assets/img/products/c1_5.jpg",
-                        "store" : 100,
-                        "proof" : "国药准字H10930015",
-                        "factory" : "杭州中美华东制药有限公司",
-                        "server" : "药房网",
-                        "category" : "抗排异药物",
-                        "category_id" : 1
+                var data ={
+                        "price" : "99.90",
+                        "oprice" : "104.90"
                     }
-                ]
-                $.post('http://10.3.136.179:1010/delProduct',{data:JSON.stringify({ids:["5aa6817236000f19b4a3d7d6","5aa6817236000f19b4a3d7d7","5aa3ab0f93a94c81814c5358"]})},res=>{
+                $.post('http://10.3.136.179:1010/updateProduct',{id:"5aa3987193a94c81814c50fc",data:JSON.stringify(data)},res=>{
                     console.log(res);
                     // var $ul=$('<ul/>');
                     // var html=res.data.map(function(item){
