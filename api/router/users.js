@@ -22,7 +22,6 @@ module.exports={
         app.get('/login',function(req,res){
             var username = req.query.username;
             var password = req.query.password;
-            console.log(password)
             if(password){
                 var pass_secret = crypto.createHash('md5').update(password).digest('hex');
                 db.mongodb.select('users',{username,password:pass_secret}).then(result=>{
