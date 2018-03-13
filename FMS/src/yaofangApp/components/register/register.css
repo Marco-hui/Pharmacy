@@ -1,0 +1,80 @@
+#lcsection-reg ul li input{
+	width: 6.6rem;
+	height: 1.386667rem;
+	border: 0;
+	font-size: 0.48rem;	
+	padding-left: 1.6rem;
+	color: #000;
+}
+.lcsection ul li .vcode{
+	display: inline-block;
+	width: 1.946667rem;
+	height: 0.8rem;
+	background: #ccc;
+	float: right;
+	margin-top: 0.32rem;
+	border-radius: 0.066667rem;
+	font-size: 0.533333rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.lcsection ul li .sjcode{
+	float: right;
+	display: inline-block;
+	width: 2.133333rem;
+	height: 0.8rem;
+	border: 0.026667rem solid #4990e0;
+	margin-top: 0.32rem;
+	border-radius: 0.066667rem;
+	text-align: center;
+	font-size: 22px;
+	line-height: 0.8rem;
+	font-family: "宋体";
+	color: #4990e0;
+	vertical-align: middle;
+}
+.lcsection ul li img.iconcode{
+	width: 0.48rem;
+	height: 0.493333rem;
+	left: 0.533333rem;
+	top: 0.426667rem;
+}
+.lcsection ul li img.iconclose1,img.iconclose2{
+	width: 0.453333rem;
+	height: 0.453333rem;
+	right: 2.35rem;
+	top: 0.48rem;
+}
+.lcsection ul li img.iconshouji{
+	width: 0.373333rem;
+	height: 0.533333rem;
+	left: 0.533333rem;
+	top: 0.426667rem;
+}
+.lcsection ul li img.iconmail{
+	width: 0.453333rem;
+	height: 0.293333rem;
+	left: 0.533333rem;
+	top: 0.533333rem;
+}
+.lcsection .checkbox{
+	margin-top: 0.533333rem;
+	text-align: center;
+	font-size: 0.293333rem;
+	height: 0.533333rem;
+	font-family: "宋体";
+}
+.lcsection .checkbox span>input{
+	display: inline-block;
+	width: 0.533333rem;
+	height: 0.533333rem;
+	outline: 0;
+	vertical-align: middle;
+	margin-right: 0.293333rem;
+}
+.lcsection .checkbox span>em{
+	font-style: normal;
+	margin-left: 0.293333rem;
+	color: #4990e0; 
+}
