@@ -8,6 +8,8 @@ const path = require('path');
 const users = require('./users');
 const product = require('./product');
 const admin = require('./admin');
+const car = require('./car');
+const order = require('./order');
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -29,6 +31,8 @@ module.exports={
         users.reg(app);
         product.reg(app);
         admin.reg(app);
+        car.reg(app);
+        order.reg(app);
         http.listen(_port || 1010);
     }
 }

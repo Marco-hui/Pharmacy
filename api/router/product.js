@@ -16,10 +16,16 @@ module.exports={
                 res.send(apiResult(result && result.length>0,result));
             })
         })
-        // 获取列表页商品数据接口
+        // 获取列表页商品数据接口(支持价格排序)
         app.get('/products',(req,res)=>{
-            let category_id=req.query.category_id*1;
-            db.mongodb.select('products',{category_id}).then(result=>{
+            let category_id = req.query.category_id*1;
+            let _order = req.query.order*1;
+            if(!_order){
+                order={};
+            }else{
+                order={price:_order};
+            }
+            db.mongodb.select('products',{category_id},order).then(result=>{
                  res.send(apiResult(result && result.length>0,result));
             })
         })
@@ -39,7 +45,6 @@ module.exports={
             let id = req.query.id;
             let _id = db.mongodb.objectid(id);
             db.mongodb.select('indexgoods',{_id}).then(result1=>{
-                console.log(result1.length);
                 if(result1.length == 0){
                     db.mongodb.select('products',{_id}).then((result2)=>{
                         res.send(apiResult(true,result2));

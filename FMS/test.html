@@ -26,22 +26,91 @@
     
     <script type="text/javascript">
         $(function(){
-            $("#btn").on('click',function(){
-                var data ={
-                        "price" : "99.90",
-                        "oprice" : "104.90"
+            // $("#btn").on('click',function(){
+            //     var data =[{
+            //             "proname" : "咪唑立宾片(布累迪宁)",
+            //             "size" : "50mg*100片",
+            //             "price" : 721.10,
+            //             "oprice" : 726.22,
+            //             "imgurl" : "src/assets/img/products/c1_3.jpg",
+            //             "store" : 100,
+            //             "proof" : "国药准字H10930015",
+            //             "factory" : "日本Asahikasei Pharma Corpora",
+            //             "server" : "药房网",
+            //             "category" : "抗排异药物",
+            //             "category_id" : 1
+            //         },{
+            //             "proname" : "咪唑立宾片(布累迪宁)",
+            //             "size" : "50mg*100片",
+            //             "price" : 721.99,
+            //             "oprice" : 726.99,
+            //             "imgurl" : "src/assets/img/products/c1_3.jpg",
+            //             "store" : 100,
+            //             "proof" : "国药准字H10930015",
+            //             "factory" : "日本Asahikasei Pharma Corpora",
+            //             "server" : "药房网",
+            //             "category" : "抗排异药物",
+            //             "category_id" : 2
+            //         }]
+            //     $.post('http://10.3.136.179:1010/delProduct',{id:"5aa6817336000f19b4a3d7dd"},res=>{
+            //         console.log(res);
+            //         // var $ul=$('<ul/>');
+            //         // var html=res.data.map(function(item){
+            //         //     return `<li>
+            //         //         <h3>${item.proname}</h3>
+            //         //     </li>`
+            //         // }).join('');
+            //         // $("#goodslist").html('');
+            //         // $ul.html(html).appendTo("#goodslist");
+            //     })
+            // })
+
+            var obj = {
+                        "id" : "5aa76f207fbf5c1b7c4077a3",
+                        "proname" : "咪唑立宾片(布累迪宁)",
+                        "size" : "50mg*100片",
+                        "price" : 721.0,
+                        "oprice" : 716.0,
+                        "imgurl" : "src/assets/img/products/c1_3.jpg",
+                        "store" : 100,
+                        "server" : "药房网",
+                        "username" : "13413611594",
+                        "qty" : 3
                     }
-                $.post('http://10.3.136.179:1010/updateProduct',{id:"5aa3987193a94c81814c50fc",data:JSON.stringify(data)},res=>{
-                    console.log(res);
-                    // var $ul=$('<ul/>');
-                    // var html=res.data.map(function(item){
-                    //     return `<li>
-                    //         <h3>${item.proname}</h3>
-                    //     </li>`
-                    // }).join('');
-                    // $("#goodslist").html('');
-                    // $ul.html(html).appendTo("#goodslist");
-                })
+            var ids = ["5aa6817336000f19b4a3d7da","5aa6817336000f19b4a3d7db","5aa6817336000f19b4a3d7dc"];
+            var orders={
+                "username" : "13413611594",
+                "total" : 234.4,
+                "status" : 0,
+                "pros" : JSON.stringify([ 
+                    {
+                        "_id" : "123",
+                        "imgurl" : "assect/img/products/c1_1.jpg",
+                        "qty" : 2
+                    }, 
+                    {
+                        "_id" : "123456",
+                        "imgurl" : "assect/img/products/c1_2.jpg",
+                        "qty" : 2
+                    }
+                ])
+            }
+
+            var del_id = {
+                _id:"5aa7c4999d64391428e13a04",
+                proids:JSON.stringify(["5aa7cbe727abd2ba31be9677","5aa7cbeb27abd2ba31be967c"])
+            }
+            $.post('http://10.3.136.179:1010/putorder',del_id,res=>{
+                console.log(res);
+                // var $ul=$('<ul/>');
+                // var html=res.data.map(function(item){
+                //     return `<li>
+                //         <h3>${item.proname}</h3>
+                //         <span>${item.price}</span>
+                //     </li>`
+                // }).join('');
+                // $("#goodslist").html('');
+                // $ul.html(html).appendTo("#goodslist");
             })
 
 // {data:JSON.stringify(data)}
