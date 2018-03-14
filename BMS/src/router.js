@@ -21,7 +21,7 @@ var router = new VueRouter({
                 {path:'/users',component: users}
             ]
         },
-        {path:'/login',component: login},
+        {path:'/login',name:"login",component: login},
     ]
 })
 export default router;

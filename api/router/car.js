@@ -4,7 +4,7 @@ const apiResult = require('../utils/apiResult');
 module.exports={
     reg(app){
         // （点击加入清单）数据加入购物车接口
-        app.post('/addcar',(req,res)=>{
+        app.post('/addcar',filter,(req,res)=>{
             let data = req.body;
             data.id = data.id;
             data.price = data.price*1;

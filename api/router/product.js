@@ -60,10 +60,12 @@ module.exports={
             if(field){
                 let proname = new RegExp("^.*"+field+".*$",'ig');
                 let category = new RegExp("^.*"+field+".*$",'ig');
+                let size = new RegExp("^.*"+field+".*$",'ig');
+                let factory = new RegExp("^.*"+field+".*$",'ig');
                 var data=[];
-                db.mongodb.select('indexgoods',{$or:{proname,category}}).then(data1=>{
+                db.mongodb.select('indexgoods',{$or:[{proname},{category},{size},{factory}]}).then(data1=>{
                     data = data.concat(data1);
-                    db.mongodb.select('products',{proname}).then((data2)=>{
+                    db.mongodb.select('products',{$or:[{proname},{category},{size},{factory}]}).then((data2)=>{
                         data=data.concat(data2);
                         res.send(apiResult(data && data.length > 0,data));
                     })
