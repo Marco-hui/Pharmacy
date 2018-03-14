@@ -109,9 +109,6 @@
 	import $ from '../../common/jquery-3.2.1.min.js'
 	import router from '../../router/rounter.js'
 	import lcfootertop from '../home/footer.vue'
-	$(function(){
-		// console.log(44)
-	})
 	export default {
 		components:{
 			lcfootertop

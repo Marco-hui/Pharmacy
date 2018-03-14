@@ -11,6 +11,14 @@ html>div{
 		align-items: center;
 		font-size: 0.48rem;
 		color: #fff;
+		img{
+			position: absolute;
+			display: block;
+			width: 0.533333rem;
+			height: 0.533333rem;
+			right: 0.266667rem;
+			top: 0.373333rem;
+		}
 	}
 	.mynews{
 		flex: 1;

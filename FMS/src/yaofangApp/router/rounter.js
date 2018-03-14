@@ -10,6 +10,8 @@ import cartsComponent from '../components/carts/carts.vue'
 import mineComoponent from '../components/mine/mine.vue'
 import orderComponent from '../components/order/order.vue'
 import paymentComponent from '../components/payment/payment.vue'
+
+// import popComponent from '../components/pop/pop.vue'
 const router = new VueRouter({
     routes: [
         {path: '/', component: homeComponent},
@@ -19,6 +21,8 @@ const router = new VueRouter({
         {path: '/mine', component: mineComoponent},
         {path: '/order', component: orderComponent},
         {path: '/payment/:price', component: paymentComponent}
+        // {path: '/pop', component: popComponent}
     ]
+
 })
 export default router;

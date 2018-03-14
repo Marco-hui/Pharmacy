@@ -1,7 +1,9 @@
 <template>
 	<div class="lccontain">
 		<header class='lcheader'>
-			<img src="./img/top_left.png">
+			<a href="javascript:history.go(-1)">
+				<img src="./img/top_left.png">	
+			</a>
 			<span>登录仁和药房网</span>
 		</header>
 		<section class="lcsection">
@@ -42,12 +44,18 @@
 		<footer class="lcfooter">
 			
 		</footer>
+		<div class="lcpop1" v-if="$store.state.common.showpop">
+			<lcpop :msgFather="txt">
+				
+			</lcpop>		
+		</div>
 	</div>
 </template>
 <script>
 	import http from "../../utils/httpclient.js"
 	import "./login.css"
 	import router from "../../router/rounter.js"
+	import lcpop from "../pop/pop.vue"
 
 	export default {
 		data(){
@@ -56,8 +64,12 @@
 				password: '',
 				icondel: false,
 				showcode: false,
-				showeye: false
+				showeye: false,
+				txt: ""
 			}
+		},
+		components:{
+			lcpop
 		},
 		methods:{
 			login(){
@@ -70,7 +82,9 @@
 						// this.$store.state.common.username=
 						// router.push({path:'carts',query:{username:this.username}})
 					}else{
-						window.alert('用户名与密码不匹配')
+						this.$store.state.common.showpop=true
+						this.txt='用户名与密码不匹配'
+						// window.alert('用户名与密码不匹配')
 					}
 				})
 			},

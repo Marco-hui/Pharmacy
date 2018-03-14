@@ -3,6 +3,7 @@
 		<header class="mineheader">
 			<div class="top">
 				<span>我的药房网</span>
+				<img src="./img/shezhi.png">
 			</div>
 			<div class="mynews">
 				<img src="./img/touxiang.png">

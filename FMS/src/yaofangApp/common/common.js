@@ -20,7 +20,8 @@ var state={
 	// user(){
 	// 	return username
 	// }
-	uername: null
+	uername: null,
+	showpop: false
 	
 };
 export default {state}
