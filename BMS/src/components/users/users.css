@@ -1,17 +1,22 @@
-.users th{
+.users .header{
+    display: inline-block;
+    width: 116px;
     height: 30px;
-    padding: 0 5px;
-    border-right: 1px solid #005500;
-}
-.users td{
+    line-height: 30px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     text-align: center;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    white-space: nowrap;
 }
-.users tr:nth-child(odd){
-    background: #DDDDDD;
+.users .operations{
+    position: absolute;
+    bottom:18px;
+    right:18px;
 }
-.users tr{
-    line-height: 40px;
+.users .val{
+    width: 113px;
+    height: 30px;
+    margin-top: 5px;
+}
+.users .import{
+    margin-top: 10px;
 }

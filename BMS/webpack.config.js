@@ -83,10 +83,17 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      'jquery': 'jquery' 
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
+  plugins: [
+      new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery"
+      })
+   ],
   devServer: {
     historyApiFallback: true,
     noInfo: true,
