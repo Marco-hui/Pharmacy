@@ -1,6 +1,6 @@
 {
-  "name": "pms",
-  "description": "前台管理系统",
+  "name": "bms",
+  "description": "后台管理系统",
   "version": "1.0.0",
   "author": "Marco-hui <matao_1891@163.com>",
   "license": "MIT",

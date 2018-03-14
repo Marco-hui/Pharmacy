@@ -10,6 +10,7 @@ const product = require('./product');
 const admin = require('./admin');
 const car = require('./car');
 const order = require('./order');
+const my = require('./my');
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -33,6 +34,7 @@ module.exports={
         admin.reg(app);
         car.reg(app);
         order.reg(app);
+        my.reg(app);
         http.listen(_port || 1010);
     }
 }
