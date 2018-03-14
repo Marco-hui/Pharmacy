@@ -1,23 +1,39 @@
 <template lang="html">
-  <div>
+  <div class="products_box">
     <table class="products">
         <thead>
-            <th v-for="(val,key) in tableData[0]" v-if="cols.indexOf(key) > -1">{{dict[lanType][key] || key}}</th>
-            <th></th>
+            <th>
+                <input type="checkbox" @click="allChecked" checked v-if="arrDel.length == tableData.length" key="'a'"/>
+                <input type="checkbox" @click="allChecked"  v-else key="'b'"/>
+            </th>
+            <th v-for="(val,key) in tableTh[0]" v-if="cols.indexOf(key) > -1">{{dict[lanType][key] || key}}</th>
+            <th class="doSoming">
+                <router-link to="/users">添加商品</router-link>
+                <a href="javascript:void(0);" @click="delMore" >批量删除</a>
+            </th>
         </thead>
         <tbody>
-            <tr v-for="(obj,idx) in tableData">
-                <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1">{{val}}</td>
+            <tr v-for="(obj,idx) in tableData" :key="'c'+idx" :id="obj._id" class="upShow_box">
+                <td style="line-height:100px" >
+                    <input type="checkbox" @click="checkedBtn(obj._id,idx)" v-if="arrDel.indexOf(obj._id)>-1 " checked key="'e'+idx" />
+                    <input type="checkbox" @click="checkedBtn(obj._id,idx)" v-else  key="'f'+idx" />
+                </td>
+                <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1" :id="dataId" :key="'d'+key">{{val}}</td>
                 <td>
-                    <input type="button" value="添加" @click="add"/>
                     <input type="button" value="修改" @click="updata(obj._id)"/>
-                    <input type="button" value="删除" @click="remove(obj._id,idx)"/>
+                    <input type="button" value="删除" @click="remove(obj.category_id,obj._id,idx)"/>
                 </td>
             </tr>
         </tbody>
     </table>
+    <div class="add" v-if="showAdd">
+        <!-- <add :add='addNum'></add> -->
+        <div v-for="(val,idx) in addNum" >
+            <input type="text" v-for="(val,key) in addObj[0]" />
+        </div>
+    </div>
     <div class="page">
-        <span v-for="(val,idx) in pageNum" @click="page(idx)">{{idx+1}}</span>
+        <span v-for="idx in pageNum" @click="page(idx-1)">{{idx}}</span>
     </div>
     <spinner v-if="show"></spinner>
   </div>
@@ -27,44 +43,168 @@
 import './products.css'
 import http from 'axios'
 import spinner from '../spinner/spinner.vue'
+import $ from 'jquery'
 
 export default {
     data() {
         return {
-            tableData: '',
+            tableTh:[],
+            tableData: [],
             show: false,
             cols: ['proname','size','price','oprice','store','proof','factory','server'],
             lanType: 'cn',
             dict: {},
             pageNum: '',
-            pageIdx: ''
+            pageIdx: '',
+            showAdd: true,
+            upObj: [{
+                proname: '',
+                size: '',
+                price: '',
+                oprice: '',
+                store: '',
+                proof: '',
+                factory: '',
+                server: ''
+            }],
+            addNum: 0,
+            dataId: '',
+            arrDel: [],
         }
     },
     components: {
         spinner
     },
     methods: {
-        remove(_idx,idx){
-            this.tableData.splice(idx,1)
+        allChecked(){
+            if(this.arrDel.length == this.tableData.length){
+                this.arrDel = []
+                // console.log(this.arrDel)
+            }else{
+                this.arrDel=[];
+                for(var i=0;i<this.tableData.length;i++){
+                    this.arrDel.push(this.tableData[i]._id)
+                    // console.log(this.tableData[i]._id)
+                }
+                    // console.log(this.arrDel)
+            }
+        },
+        checkedBtn(id,idx){
+            var i = this.arrDel.indexOf(id);console.log(i)
+            if(i < 0){
+                // console.log(66) 
+                this.arrDel.push(id)
+            }else{
+                // console.log(77)
+                this.arrDel.splice(i, 1)
+            }    
+            // console.log(this.arrDel)
+        },
+        delMore(){
+            http({
+                method: 'post',
+                url: 'http://10.3.136.179:1010/delProduct',
+                headers:{
+                    'Content-Type': "application/x-www-form-urlencoded"
+                },
+                transformRequest:[function (data) {
+                    let ret = ''
+                    for (let it in data) {
+                      ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
+                    }
+                    return ret
+                }], 
+                data: {
+                    ids:JSON.stringify(this.arrDel)
+                }
+            }).then((res) => {
+                console.log(res)
+            })
+        },
+        remove(c_id,_idx,idx){
+            this.tableData.splice(idx,1);  
+            console.log(c_id,_idx,idx);
+            http({
+                method: 'post',
+                url: 'http://10.3.136.179:1010/delProduct',
+                headers:{
+                    'Content-Type': "application/x-www-form-urlencoded"
+                },
+                transformRequest:[function (data) {
+                    let ret = ''
+                    for (let it in data) {
+                      ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
+                    }
+                    return ret
+                }], 
+                data: {
+                    id:_idx
+                }
+            }).then((res) => {
+                console.log(res)
+            })
         },
         add(){
-            console.log(666)
+            for(var idx in this.addObj){
+                if(this.addObj[idx] == ''){
+                    window.alert('请将添加的商品信息填写完整');
+                    return false;
+                }else{
+                    // console.log(JSON.stringify(this.addObj))
+                    // http.post('http://10.3.136.179:1010/addProduct',{data:JSON.stringify(this.addObj)}).then((res) => {
+                    //     console.log(666)
+                    // })
+                    console.log(666)
+                    return false;
+                }
+            }
         },
-        updata(){
-            console.log(666)
+        addN(){
+            this.addNum++;
+            var addO = {
+                proname: '',
+                size: '',
+                price: '',
+                oprice: '',
+                store: '',
+                proof: '',
+                factory: '',
+                server: ''
+            }
+            this.addObj.push(addO)
+            // console.log(this.addObj)
+        },
+        addR(){
+            this.addNum = 0;
+            // console.log(this.addObj[0])
+        },
+        updata(id){
+            // console.log(id)
+            // $div = $('<div></div>');
+            // $('<input/>').appendTo($div)
+            // $div.addClass('upShow')
+            // $div.appendTo($('.upShow_box'))
         },
         page(idx){
-            this.pageIdx = idx;
+            // this.pageIdx = idx;
+            http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+                res = res.data.data.slice(60)
+                this.tableData = res.slice(idx*10,idx*10+10);
+                console.log(this.tableData);
+                this.show = false;
+            })
         }
     },
     mounted(){
         this.show = true;
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
                 this.dict = res.data
-            })
+            });
         http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
-                this.tableData = res.data.data;
-                this.pageNum = Math.floor(this.tableData.length/6);
+                res = res.data.data.slice(60)
+                this.tableTh = res;
+                this.tableData = res.slice(0,10);
+                this.pageNum = Math.ceil(res.length/10);
                 this.show = false;
             })
     }

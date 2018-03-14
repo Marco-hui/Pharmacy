@@ -1,7 +1,8 @@
 .products{
     padding-top: 46px;
     overflow: hidden;
-    height: 600px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 .products thead{
     top: 74px;
@@ -12,7 +13,7 @@
 .products th{
     height: 30px;
     /*padding: 0 10px;*/
-    width: 138px;
+    width: 124px;
     border-right: 1px solid #005500;
 }
 .products tbody{
@@ -28,6 +29,32 @@
 }
 .products td{
     width: 200px;
+    height: 100px;
     text-align: center;
     border-bottom: 1px solid #DDDDDD;
+    font-size: 14px;
+}
+.add{
+    position: fixed;
+    top: 125px;
+    left: 142px;
+}
+.add input{
+    width: 140px;
+    height: 20px;
+}
+.products .doSoming{
+    font-size: 14px;
+}
+.products .doSoming a{
+    text-decoration:none; 
+    color: #00CC00;
+}
+.products .upShow_box{
+    position: relative;
+}
+.products .upShow{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
