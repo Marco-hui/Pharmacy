@@ -2,7 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/yaofangApp/app.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -75,6 +75,13 @@ module.exports = {
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
+   // 增加一个plugins
+   plugins: [
+      new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery"
+      })
+   ],
   devServer: {
     historyApiFallback: true,
     noInfo: true,

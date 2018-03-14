@@ -7,9 +7,9 @@
 			<div class="mynews">
 				<img src="./img/touxiang.png">
 				<div class="newmain">
-					<span>13444444</span>
+					<span>{{dataset.username}}</span>
 					<p>
-						<em>积分：50</em>
+						<em>积分：{{dataset.credits}}</em>
 						<em>优惠券：0</em>
 					</p>
 				</div>
@@ -20,12 +20,15 @@
 					需求订单
 				</router-link>	
 			</p>
-		</header><!-- /header -->
+		</header>
 		<nav class="lcnav">
 			<ul>
 				<li>
+					<!-- 未付款的订单数 -->
 					<span>0</span>
-					<span>待付款</span>
+					<router-link to="/order">
+						待付款
+					</router-link>
 				</li>
 				<li>
 					<span>0</span>
@@ -36,6 +39,7 @@
 					<span>待收货</span>
 				</li>
 				<li>
+					<!-- 已付款的订单数 -->
 					<span>0</span>
 					<span>待评价</span>
 				</li>
@@ -53,9 +57,25 @@
 <script>
 	import './mine.scss'
 	import lcfooter from '../home/footer.vue'
+	import http from '../../utils/httpclient.js'
 	export default {
+		data(){
+			return {
+				user: '',
+				dataset: []
+			}
+		},
 		components:{
 			lcfooter
+		},
+		mounted(){
+			this.user= window.sessionStorage.getItem('username')
+			console.log(this.user)
+			http.get('getuser',{username: this.user}).then(res=>{
+				console.log(res.data.data[0])
+				this.dataset= res.data.data[0]
+			})
+
 		}
 	}
 </script>

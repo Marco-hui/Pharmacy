@@ -1,4 +1,4 @@
-var username='';
+
 var state={
 	yanzhengma(){
 	    var code='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -16,13 +16,11 @@ var state={
 		}
 		return res;
 	},
-	saveuser(_username){
-		return username = _username
-	},
+	
 	// user(){
 	// 	return username
 	// }
-	uername: username
+	uername: null
 	
 };
 export default {state}

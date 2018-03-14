@@ -69,6 +69,8 @@
 						window.sessionStorage.setItem('username',this.username)
 						// this.$store.state.common.username=
 						// router.push({path:'carts',query:{username:this.username}})
+					}else{
+						window.alert('用户名与密码不匹配')
 					}
 				})
 			},
