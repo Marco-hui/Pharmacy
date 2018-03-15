@@ -26,7 +26,7 @@
                         <td><button id="btnlogin" @click="Login">登录</button><button id="btnreset">重置</button></td>
                     </tr>        
                     <tr class="forget">
-                        <td>&nbsp;</td><td class="forgetpsw"><a href="login_forgetb.html" class="fr">忘记密码？</a></td>
+                        <td>&nbsp;</td><td class="forgetpsw"><a href="#" class="fr">忘记密码？</a></td>
                     </tr>   
                 </table>
             </div>
