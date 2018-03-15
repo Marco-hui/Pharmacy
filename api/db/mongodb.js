@@ -13,11 +13,11 @@ MongoClient.connect(url,function(err,_client){
 })
 
 module.exports={
-    select(coll_name,condition){
+    select(coll_name,condition,order){
         if(client){
             return new Promise((resolve,reject)=>{
                 var col = client.db(dbName).collection(coll_name);
-                col.find(condition || {}).toArray((err,result)=>{
+                col.find(condition || {}).sort(order || {}).toArray((err,result)=>{
                     if(err){
                         reject(err);
                     }else{
@@ -45,7 +45,7 @@ module.exports={
         if(client){
             return new Promise((resolve,reject)=>{
                 var col = client.db(dbName).collection(coll_name);
-                col.update(condition,{$set:{data}}).then((result,err)=>{
+                col.update(condition,{$set:data}).then((result,err)=>{
                     if(err){
                         reject(err);
                     }else{

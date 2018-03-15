@@ -6,7 +6,11 @@ const bp = require('body-parser');
 const path = require('path');
 
 const users = require('./users');
-const products = require('./products');
+const product = require('./product');
+const admin = require('./admin');
+const car = require('./car');
+const order = require('./order');
+const my = require('./my');
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -26,7 +30,11 @@ app.use(express.static(path.join(path.resolve(__dirname,'../'),'/')));
 module.exports={
     start(_port){
         users.reg(app);
-        products.reg(app);
+        product.reg(app);
+        admin.reg(app);
+        car.reg(app);
+        order.reg(app);
+        my.reg(app);
         http.listen(_port || 1010);
     }
 }

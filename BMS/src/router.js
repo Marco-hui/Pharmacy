@@ -25,7 +25,7 @@ var router = new VueRouter({
                 {path:'/updataIndex',component: updataIndex,name:'updataIndex'}
             ]
         },
-        {path:'/login',component: login},
+        {path:'/login',name:"login",component: login},
     ]
 })
 export default router;
