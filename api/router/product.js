@@ -29,17 +29,6 @@ module.exports={
                  res.send(apiResult(result && result.length>0,result));
             })
         })
-        // 后台获取全部商品数据接口
-        app.get('/admingetpro',(req,res)=>{
-            var goods=[];
-            db.mongodb.select('indexgoods').then((goods1)=>{
-                goods=goods.concat(goods1);
-                db.mongodb.select('products').then((goods2)=>{
-                    goods=goods.concat(goods2);
-                    res.send(apiResult(true,goods));
-                })
-            })
-        })
         // 获取详情页商品数据接口
         app.get('/apro',(req,res)=>{
             let id = req.query.id;
@@ -54,7 +43,7 @@ module.exports={
                 }
             })
         })
-        // 根据商品名模糊查询接口
+        // 获取首页和列表页商品模糊查询接口
         app.get('/fuzzy',(req,res)=>{
             var field = req.query.field.trim().replace(/[\*\^\$]/g,"");
             if(field){
@@ -63,7 +52,7 @@ module.exports={
                 let size = new RegExp("^.*"+field+".*$",'ig');
                 let factory = new RegExp("^.*"+field+".*$",'ig');
                 var data=[];
-                db.mongodb.select('indexgoods',{$or:[{proname},{category},{size},{factory}]}).then(data1=>{
+                db.mongodb.select('indexgoods',{$or:[{proname},{size},{factory}]}).then(data1=>{
                     data = data.concat(data1);
                     db.mongodb.select('products',{$or:[{proname},{category},{size},{factory}]}).then((data2)=>{
                         data=data.concat(data2);

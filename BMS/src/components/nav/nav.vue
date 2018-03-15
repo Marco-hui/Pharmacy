@@ -15,27 +15,27 @@
         <div class="nav_maintain">
             <p @click="showpurchase=!showpurchase">采购管理</p>
         </div> 
-        <a href ="javascript:return false;" class="maintain"  v-if="showpurchase">维护中</a>
+        <a href ="javascript:return false;" class="maintain"  v-if="showpurchase">维护中...</a>
         <div class="nav_maintain">
             <p @click="showsupplier =!showsupplier ">供应商管理</p>
         </div> 
-        <a href ="javascript:return false;" class="maintain"  v-if="showsupplier">维护中</a>
+        <a href ="javascript:return false;" class="maintain"  v-if="showsupplier">维护中...</a>
         <div class="nav_maintain">
             <p @click="showtake=!showtake">收货管理</p>
         </div> 
-        <a href ="javascript:return false;" class="maintain" v-if="showtake">维护中</a>
+        <a href ="javascript:return false;" class="maintain" v-if="showtake">维护中...</a>
         <div class="nav_maintain">
             <p @click="showput=!showput">入库管理</p>
         </div> 
-        <a href ="javascript:return false;" class="maintain" v-if="showput">维护中</a>
+        <a href ="javascript:return false;" class="maintain" v-if="showput">维护中...</a>
         <div class="nav_maintain">
             <p @click="showup=!showup">上架管理</p>
         </div> 
-        <a href ="javascript:return false;" class="maintain" v-if="showup">维护中</a>
+        <a href ="javascript:return false;" class="maintain" v-if="showup">维护中...</a>
         <div class="nav_maintain">
             <p @click="showdown=!showdown">下架管理</p>
         </div> 
-        <a href ="javascript:return false;" class="maintain" v-if="showdown">维护中</a>
+        <a href ="javascript:return false;" class="maintain" v-if="showdown">维护中...</a>
     </div>
 </template>
 

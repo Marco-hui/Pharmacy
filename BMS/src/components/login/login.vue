@@ -4,15 +4,16 @@
             <div class="superlogin"></div>
             <div class="loginBox locate">
                 <div class="logo"><img src="src/assets/img/logo.jpg"/></div>
+                <h1>药房网后台管理系统</h1>
                 <div class="loginMain">
                     <table border="0" cellspacing="0" cellpadding="0">
                         <tr>
                             <td class="title">用户名：</td>
-                            <td><input type="text" class="form-control txt" v-model="username"/></td>
+                            <td><input type="text" class="form-control txt" v-model="username" ref="username"/></td>
                         </tr>
                         <tr>
                             <td class="title">密   码：</td>
-                            <td><input type="password" class="form-control txt" v-model="password"/></td>
+                            <td><input type="password" class="form-control txt" v-model="password" ref="password"/></td>
                         </tr>
                         <tr>
                             <td class="title">验证码：</td>
@@ -24,7 +25,7 @@
                         </tr>        
                         <tr class="opt">
                             <td>&nbsp;</td>
-                            <td><button id="btnlogin" @click="Login">登录</button><button id="btnreset">重置</button></td>
+                            <td><button id="btnlogin" @click="Login">登录</button><button id="btnreset" @click="Reset">重置</button></td>
                         </tr>        
                         <tr class="forget">
                             <td>&nbsp;</td><td class="forgetpsw"><a class="fr">忘记密码？</a></td>
@@ -84,7 +85,15 @@
                 }
             },
             Login(){
-                if(!this.status){
+                if(this.username == ""){
+                    $('.errortd').show().find('.errorword').text("请输入用户名！");
+                    this.$refs.username.focus();
+                    return false;
+                }else if(this.password == ""){
+                    $('.errortd').show().find('.errorword').text("请输入密码！");
+                    this.$refs.password.focus();
+                    return false;
+                }else if(!this.status){
                      $('.errortd').show().find('.errorword').text("验证码有误！");
                      $('.txt2').focus();
                      return false;
@@ -104,6 +113,12 @@
                         this.show = false;
                     }
                 })
+            },
+            Reset(){
+                this.username='';
+                this.password='';
+                this.yzm='';
+                this.$refs.username.focus();
             }
         },
         mounted(){

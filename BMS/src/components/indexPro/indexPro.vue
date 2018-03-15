@@ -132,6 +132,7 @@ export default {
     mounted(){
         this.show = true;
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
+<<<<<<< HEAD
                 this.dict = res.data
             });
         // http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
@@ -143,12 +144,21 @@ export default {
         //         console.log(res)
         //     })
         http.get('admingetpro').then((res) => {
+=======
+            this.dict = res.data
+        });
+        http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+>>>>>>> adc8f23382efaf2a8cf0638dca0e62f71aaa16b2
             res = res.data.data.slice(0,60)
             this.tableTh = res;
             this.tableData = res.slice(0,10);
             this.pageNum = Math.floor(res.length/10);
             this.show = false;
+<<<<<<< HEAD
         });
+=======
+        })
+>>>>>>> adc8f23382efaf2a8cf0638dca0e62f71aaa16b2
     }
 }
 </script>
