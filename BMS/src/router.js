@@ -9,6 +9,8 @@ import header from './components/header/header.vue'
 import products from './components/products/products.vue'
 import indexPro from './components/indexPro/indexPro.vue'
 import login from './components/login/login.vue'
+import updata from './components/updata/updata.vue'
+import updataIndex from './components/updataIndex/updataIndex.vue'
 
 var router = new VueRouter({
     routes:[
@@ -18,7 +20,9 @@ var router = new VueRouter({
                 {path:'/indexPro',component: indexPro},
                 {path:'/header',component: header},
                 {path:'/products',component: products},
-                {path:'/users',component: users}
+                {path:'/users',component: users},
+                {path:'/updata',component: updata,name:'updata'},
+                {path:'/updataIndex',component: updataIndex,name:'updataIndex'}
             ]
         },
         {path:'/login',component: login},

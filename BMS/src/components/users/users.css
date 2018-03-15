@@ -20,3 +20,7 @@
 .users .import{
     margin-top: 10px;
 }
+.users .import2 input{
+    width: 108px;
+    height: 30px;
+}
