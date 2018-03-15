@@ -13,7 +13,7 @@
                 <td><input type="checkbox" /></td>
                 <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1" :id="dataId" >{{val}}</td>
                 <td>
-                    <input type="button" value="修改" @click="updata(obj._id)"/>
+                    <!-- <input type="button" value="修改" @click="updata(obj._id)"/> -->
                 </td>
             </tr>
         </tbody>
@@ -66,6 +66,9 @@ export default {
         spinner
     },
     methods: {
+        updata(obj){
+            this.$router.push({name:'updataIndex',query: {obj}})
+        },
         addN(){
             this.addNum++;
             var addO = {
@@ -84,9 +87,6 @@ export default {
         addR(){
             this.addNum = 0;
             // console.log(this.addObj[0])
-        },
-        updata(){
-            console.log(666)
         },
         page(idx){
             this.pageIdx = idx;

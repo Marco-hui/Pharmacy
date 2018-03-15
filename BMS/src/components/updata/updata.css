@@ -1,0 +1,45 @@
+.updata{
+    overflow: hidden;
+}
+.updata .updata_l{
+    float: left;
+    width: 135px;
+    padding-top: 20px;
+    padding-left: 485px;
+}
+.updata .updata_l p{
+    height: 32px;
+    text-align: right;
+    line-height: 32px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.updata .updata_r{
+    float: left;
+    padding-top: 20px;
+}
+.updata .updata_r input{
+    display: block;
+    height: 30px;
+    width: 258px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.updata .upBtn{
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    bottom: 68px;
+    left: 705px;
+    background: #00CC00;
+    border-bottom: 1px solid #00CC00;
+    text-align: center;
+    color: #fff;
+    cursor:pointer;
+}
