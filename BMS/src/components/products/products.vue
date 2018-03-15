@@ -13,14 +13,14 @@
             </th>
         </thead>
         <tbody>
-            <tr v-for="(obj,idx) in tableData" :key="'c'+idx" :id="obj._id" class="upShow_box">
+            <tr v-for="(obj,idx) in tableData" :key="'c'+idx" :id="obj._id" class="upShow_box" style="position:relative" >
                 <td style="line-height:100px" >
                     <input type="checkbox" @click="checkedBtn(obj._id,idx)" v-if="arrDel.indexOf(obj._id)>-1 " checked key="'e'+idx" />
                     <input type="checkbox" @click="checkedBtn(obj._id,idx)" v-else  key="'f'+idx" />
                 </td>
                 <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1" :id="dataId" :key="'d'+key">{{val}}</td>
                 <td>
-                    <input type="button" value="修改" @click="updata(obj._id)"/>
+                    <input type="button" value="修改" @click="updata(obj)"/>
                     <input type="button" value="删除" @click="remove(obj.category_id,obj._id,idx)"/>
                 </td>
             </tr>
@@ -57,7 +57,7 @@ export default {
             pageNum: '',
             pageIdx: '',
             showAdd: true,
-            upObj: [{
+            upObj: {
                 proname: '',
                 size: '',
                 price: '',
@@ -66,7 +66,7 @@ export default {
                 proof: '',
                 factory: '',
                 server: ''
-            }],
+            },
             addNum: 0,
             dataId: '',
             arrDel: [],
@@ -178,12 +178,8 @@ export default {
             this.addNum = 0;
             // console.log(this.addObj[0])
         },
-        updata(id){
-            // console.log(id)
-            // $div = $('<div></div>');
-            // $('<input/>').appendTo($div)
-            // $div.addClass('upShow')
-            // $div.appendTo($('.upShow_box'))
+        updata(obj){
+            this.$router.push({name:'updata',query: {obj}})
         },
         page(idx){
             // this.pageIdx = idx;
@@ -196,6 +192,7 @@ export default {
         }
     },
     mounted(){
+        // console.log(this)
         this.show = true;
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
                 this.dict = res.data
