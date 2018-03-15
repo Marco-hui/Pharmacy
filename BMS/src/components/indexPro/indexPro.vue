@@ -100,15 +100,15 @@ export default {
     mounted(){
         this.show = true;
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
-                this.dict = res.data
-            });
+            this.dict = res.data
+        });
         http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
-                res = res.data.data.slice(0,60)
-                this.tableTh = res;
-                this.tableData = res.slice(0,10);
-                this.pageNum = Math.floor(res.length/10);
-                this.show = false;
-            })
+            res = res.data.data.slice(0,60)
+            this.tableTh = res;
+            this.tableData = res.slice(0,10);
+            this.pageNum = Math.floor(res.length/10);
+            this.show = false;
+        })
     }
 }
 </script>
