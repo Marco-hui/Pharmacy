@@ -13,6 +13,7 @@ import './home.css'
 import http from "../utils/httpClient"
 import qheader from './header/header.vue'
 import qnav from './nav/nav.vue'
+
 export default {
     components: {
         qheader,

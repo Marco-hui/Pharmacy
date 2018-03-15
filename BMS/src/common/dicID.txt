@@ -1,0 +1,10 @@
+{
+    "cn": {
+        "name": "管理员",
+        "pass": "密码"
+    },
+    "en": {
+        "name": "Name",
+        "pass": "Pass"
+    }
+}

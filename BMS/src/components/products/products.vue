@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="products_box">
     <table class="products">
-        <thead>
+        <thead class="pro">
             <th>
                 <input type="checkbox" @click="allChecked" checked v-if="arrDel.length == tableData.length" key="'a'"/>
                 <input type="checkbox" @click="allChecked"  v-else key="'b'"/>
@@ -26,14 +26,12 @@
             </tr>
         </tbody>
     </table>
-    <div class="add" v-if="showAdd">
-        <!-- <add :add='addNum'></add> -->
-        <div v-for="(val,idx) in addNum" >
-            <input type="text" v-for="(val,key) in addObj[0]" />
-        </div>
-    </div>
     <div class="page">
         <span v-for="idx in pageNum" @click="page(idx-1)">{{idx}}</span>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="请输入想要搜索的内容" class="val_sre" />
+        <input type="button" value="搜索" class="btn_sre" @click="sreach" />
     </div>
     <spinner v-if="show"></spinner>
   </div>
@@ -41,9 +39,10 @@
 
 <script>
 import './products.css'
-import http from 'axios'
+// import http from 'axios'
 import spinner from '../spinner/spinner.vue'
 import $ from 'jquery'
+import http from '../../utils/httpClient.js'
 
 export default {
     data() {
@@ -79,116 +78,83 @@ export default {
         allChecked(){
             if(this.arrDel.length == this.tableData.length){
                 this.arrDel = []
-                // console.log(this.arrDel)
             }else{
                 this.arrDel=[];
                 for(var i=0;i<this.tableData.length;i++){
                     this.arrDel.push(this.tableData[i]._id)
-                    // console.log(this.tableData[i]._id)
                 }
-                    // console.log(this.arrDel)
             }
         },
         checkedBtn(id,idx){
             var i = this.arrDel.indexOf(id);console.log(i)
             if(i < 0){
-                // console.log(66) 
                 this.arrDel.push(id)
             }else{
-                // console.log(77)
                 this.arrDel.splice(i, 1)
             }    
-            // console.log(this.arrDel)
         },
         delMore(){
-            http({
-                method: 'post',
-                url: 'http://10.3.136.179:1010/delProduct',
-                headers:{
-                    'Content-Type': "application/x-www-form-urlencoded"
-                },
-                transformRequest:[function (data) {
-                    let ret = ''
-                    for (let it in data) {
-                      ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
-                    }
-                    return ret
-                }], 
-                data: {
-                    ids:JSON.stringify(this.arrDel)
-                }
-            }).then((res) => {
-                console.log(res)
-            })
+            var r=confirm("确定批量删除数据？")
+            if(r){
+                http.post('delProduct',{ids:JSON.stringify(this.arrDel)}).then((res) => {
+                    http.get('admingetpro').then((res) => {
+                        res = res.data.data.slice(60)
+                        this.tableTh = res;
+                        this.tableData = res.slice(0,10);
+                        this.pageNum = Math.ceil(res.length/10);
+                        this.show = false;
+                    })
+                    window.alert('批量删除成功!')
+                });
+            }
         },
         remove(c_id,_idx,idx){
             this.tableData.splice(idx,1);  
-            console.log(c_id,_idx,idx);
-            http({
-                method: 'post',
-                url: 'http://10.3.136.179:1010/delProduct',
-                headers:{
-                    'Content-Type': "application/x-www-form-urlencoded"
-                },
-                transformRequest:[function (data) {
-                    let ret = ''
-                    for (let it in data) {
-                      ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
-                    }
-                    return ret
-                }], 
-                data: {
-                    id:_idx
-                }
-            }).then((res) => {
+            http.post('delProduct',{id:_idx}).then((res) => {
                 console.log(res)
-            })
-        },
-        add(){
-            for(var idx in this.addObj){
-                if(this.addObj[idx] == ''){
-                    window.alert('请将添加的商品信息填写完整');
-                    return false;
-                }else{
-                    // console.log(JSON.stringify(this.addObj))
-                    // http.post('http://10.3.136.179:1010/addProduct',{data:JSON.stringify(this.addObj)}).then((res) => {
-                    //     console.log(666)
-                    // })
-                    console.log(666)
-                    return false;
-                }
-            }
-        },
-        addN(){
-            this.addNum++;
-            var addO = {
-                proname: '',
-                size: '',
-                price: '',
-                oprice: '',
-                store: '',
-                proof: '',
-                factory: '',
-                server: ''
-            }
-            this.addObj.push(addO)
-            // console.log(this.addObj)
-        },
-        addR(){
-            this.addNum = 0;
-            // console.log(this.addObj[0])
+                http.get('admingetpro').then((res) => {
+                    res = res.data.data.slice(60)
+                    this.tableTh = res;
+                    this.tableData = res.slice(0,10);
+                    this.pageNum = Math.ceil(res.length/10);
+                    this.show = false;
+                })
+            });
         },
         updata(obj){
             this.$router.push({name:'updata',query: {obj}})
         },
         page(idx){
             // this.pageIdx = idx;
-            http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+            this.show = true;
+            http.get('admingetpro').then((res) => {
                 res = res.data.data.slice(60)
                 this.tableData = res.slice(idx*10,idx*10+10);
-                console.log(this.tableData);
+                // console.log(this.tableData);
                 this.show = false;
             })
+            console.log($('.page span')[3])
+        },
+        sreach(){
+            // console.log($('.search .val_sre')[0].value)
+            if($('.search .val_sre')[0].value == '' ){
+                window.alert('请输入内容再点击搜索!')
+            }else{
+                this.show = true;
+                var search_val = $('.search .val_sre')[0].value;
+                console.log(search_val)
+                http.get('goodsfuzzy',{field:search_val}).then((res) => {
+                    // console.log(res.data.data.length)
+                    if(res.data.data.length == 0 ){
+                        window.alert('抱歉，查无此商品！')
+                        this.show = false;
+                    }else{
+                        this.tableData = res.data.data.slice(0,10);
+                        this.pageNum = Math.ceil(res.data.data.length/10);
+                        this.show = false;                       
+                    }
+                })     
+            }
         }
     },
     mounted(){
@@ -197,7 +163,8 @@ export default {
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
                 this.dict = res.data
             });
-        http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+        http.get('admingetpro').then((res) => {
+                // console.log(res)
                 res = res.data.data.slice(60)
                 this.tableTh = res;
                 this.tableData = res.slice(0,10);

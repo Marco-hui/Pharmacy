@@ -1,9 +1,10 @@
 .nav{
     width: 132px;
-    height: 650px;
+    height: 534px;
     position:absolute;
     border-left: 1px solid #005500;
     border-bottom: 2px solid #005500;
+    overflow: hidden;
 }
 .nav .users,.nav .products{
     height: 50px;
@@ -11,6 +12,7 @@
     text-align: center;
     border-bottom: 2px solid #005500;
     padding: 0;
+    cursor:pointer; 
 }
 .nav a{
     color: #00CC00;
@@ -26,4 +28,39 @@
     border-bottom: 2px solid #005500;
     padding: 0;
     font-size: 13px;
+}
+.nav .nav_users{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 2px solid #005500;
+    padding: 0;
+    cursor:pointer; 
+}
+.nav .users_msg{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 2px solid #005500;
+    padding: 0;
+    font-size: 13px;
+}
+.nav .nav_maintain{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 2px solid #005500;
+    padding: 0;
+    cursor:pointer; 
+}
+.nav .maintain{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 2px solid #005500;
+    padding: 0;
+    font-size: 13px;
+    color: red;
 }

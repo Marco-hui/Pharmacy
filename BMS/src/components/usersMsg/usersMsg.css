@@ -1,0 +1,42 @@
+.users_table{
+    padding-top: 46px;
+    /*overflow: hidden;*/
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.users_table thead{
+    z-index: 99;
+    top: 74px;
+    left: 134px;
+    position: fixed;
+    background: #fff;
+}
+.users_table th{
+    height: 30px;
+    /*padding: 0 10px;*/
+    width: 194px;
+    border-right: 1px solid #005500;
+    background: #00B38B;
+}
+.users_table tbody{
+    height: 600px;
+    /*overflow: auto;*/
+    position: absolute;
+    top: 30px;
+}
+.users_table tr:nth-child(odd){
+    background: #DDDDDD;
+}
+.users_table tr{
+    line-height: 40px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.users_table td{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 14px;
+    position:relative;
+    padding-left: 14px;
+}

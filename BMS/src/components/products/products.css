@@ -1,6 +1,6 @@
 .products{
     padding-top: 46px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     word-wrap: break-word;
     word-break: break-all;
 }
@@ -14,13 +14,18 @@
 .products th{
     height: 30px;
     /*padding: 0 10px;*/
-    width: 124px;
+    width: 112px;
     border-right: 1px solid #005500;
-    background: #fff;
+    background: #00B38B;
+}
+.products th:nth-child(1){
+    width: 119px;
 }
 .products tbody{
-    height: 600px;
-    overflow: auto;
+    height: 500px;
+    /*overflow: auto;*/
+    position: absolute;
+    top: 30px;
 }
 .products tr:nth-child(odd){
     background: #DDDDDD;
@@ -30,12 +35,13 @@
     border-bottom: 1px solid #DDDDDD;
 }
 .products td{
-    width: 200px;
+    width: 113px;
     height: 100px;
     text-align: center;
     border-bottom: 1px solid #DDDDDD;
     font-size: 14px;
     position:relative;
+    padding-left: 14px;
 }
 .add{
     position: fixed;
@@ -52,6 +58,9 @@
 .products .doSoming a{
     text-decoration:none; 
     color: #00CC00;
+    font-size: 13px;
+    color:  #EBEBEB;
+    font-weight:normal;
 }
 .products .upShow_box{
     position: relative;
@@ -72,4 +81,18 @@
 }
 .products_box{
     position: relative;
+}
+.products_box .search{
+    position: absolute;
+    top: -50px;
+    left: 453px;
+}
+.products_box .search input{
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
+}
+.products_box .search .btn_sre{
+    width: 50px;
+    height: 20px;
 }
