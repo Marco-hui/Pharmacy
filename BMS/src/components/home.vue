@@ -1,11 +1,7 @@
 <template lang="html">
     <div class="box">        
-        <div class="header">
-            <qheader></qheader>
-        </div>
-        <div class="nav">
-            <qnav></qnav>
-        </div>
+        <qheader></qheader>
+        <qnav></qnav>
         <div class="container">
             <router-view></router-view>
         </div>     
@@ -14,8 +10,10 @@
 
 <script>
 import './home.css'
+import http from "../utils/httpClient"
 import qheader from './header/header.vue'
 import qnav from './nav/nav.vue'
+
 export default {
     components: {
         qheader,
@@ -30,7 +28,11 @@ export default {
         
     },
     mounted() {
-        
+        http.post('islogin').then(res=>{
+            if(!res.data.status){
+                this.$router.push({name:'login'});
+            }
+        })
     }
 }
 </script>

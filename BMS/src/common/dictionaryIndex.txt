@@ -1,0 +1,20 @@
+{
+    "cn": {
+        "coupon": "优惠券",
+        "credits": "积分",
+        "headurl": "头像图片路径",
+        "password": "用户密码",
+        "username": "用户名",
+        "wallet": "钱包",
+        "_id": "id"
+    },
+    "en": {
+        "coupon": "Coupon",
+        "credits": "Credits",
+        "headurl": "Headurl",
+        "password": "Password",
+        "username": "Username",
+        "wallet": "Wallet",
+        "_id": "ID"
+    }
+}

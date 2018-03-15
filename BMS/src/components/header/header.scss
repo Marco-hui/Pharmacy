@@ -1,0 +1,18 @@
+.header{
+    overflow: hidden;
+    border: 2px solid #005500;
+    padding:0 10px;
+    h2{
+        float: left;
+        color: #005500;
+        height: 70px;
+        line-height: 70px;
+        
+    }
+    h4{
+        float: right;height: 70px;line-height: 70px;
+        i{margin-right: 6px;}
+        span{color:#f60;margin-right: 10px;}
+        a{color:#58bc58;cursor:pointer;}
+    }
+}

@@ -10,9 +10,6 @@
         </thead>
         <tbody>
             <tr v-for="(obj,idx) in tableData">
-                <!-- <td> -->
-                    <!-- <input type="checkbox" /> -->
-                <!-- </td> -->
                 <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1" :id="dataId" >{{val}}</td>
                 <td>
                     <input type="button" value="修改" @click="updata(obj)"/>
@@ -30,7 +27,8 @@
         <span v-for="(val,idx) in pageNum" @click="page(idx)">{{idx+1}}</span>
     </div>
     <div class="search">
-        <input type="text" placeholder="请输入想要搜索的内容"/>
+        <input type="text" placeholder="请输入想要搜索的内容" class="val_sre" />
+        <input type="button" value="搜索" @click="sreach" class="btn_sre" />
     </div>
     <spinner v-if="show"></spinner>
   </div>
@@ -42,6 +40,7 @@ import './indexPro.css'
 // import http from 'axios'
 import spinner from '../spinner/spinner.vue'
 import http from '../../utils/httpClient.js'
+import $ from 'jquery'
 
 export default {
     data() {
@@ -107,6 +106,27 @@ export default {
                 this.tableData = res.slice(idx*10,idx*10+10);
                 this.show = false;
             });
+        },
+        sreach(){
+            // console.log($('.search .val_sre')[0].value)
+            if($('.search .val_sre')[0].value == '' ){
+                window.alert('请输入内容再点击搜索!')
+            }else{
+                this.show = true;
+                var search_val = $('.search .val_sre')[0].value;
+                console.log(search_val)
+                http.get('indexfuzzy',{field:search_val}).then((res) => {
+                    // console.log(res.data.data.length)
+                    if(res.data.data.length == 0 ){
+                        window.alert('抱歉，查无此商品！')
+                        this.show = false;
+                    }else{
+                        this.tableData = res.data.data.slice(0,10);
+                        this.pageNum = Math.ceil(res.data.data.length/10);
+                        this.show = false;                       
+                    }
+                })     
+            }
         }
     },
     mounted(){
@@ -123,12 +143,12 @@ export default {
         //         console.log(res)
         //     })
         http.get('admingetpro').then((res) => {
-                res = res.data.data.slice(0,60)
-                this.tableTh = res;
-                this.tableData = res.slice(0,10);
-                this.pageNum = Math.floor(res.length/10);
-                this.show = false;
-            });
+            res = res.data.data.slice(0,60)
+            this.tableTh = res;
+            this.tableData = res.slice(0,10);
+            this.pageNum = Math.floor(res.length/10);
+            this.show = false;
+        });
     }
 }
 </script>

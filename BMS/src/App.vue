@@ -2,7 +2,6 @@
     <div>
         <router-view></router-view>
         <spinner v-show="false"></spinner>
-        <!-- <spinner></spinner> -->
     </div>
 </template>
 

@@ -1,7 +1,11 @@
 <template>
     <div class="updata">
         <div class="updata_l"></div>
-        <div class="updata_r"></div>
+        <div class="updata_r">
+            <form id= "uploadForm">
+                    
+            </form>
+        </div>
         <p class="upBtn" @click="updata" >确定</p>
         <router-link to="/products">返回</router-link>
     </div>
@@ -44,28 +48,24 @@
                         }
                     }
                 }
-                // console.log(JSON.stringify(this.upObjPra.upObj))
-                // console.log(this.$route.query.obj)
-                // http({
-                //     method: 'post',
-                //     url: 'http://10.3.136.179:1010/updateProduct',
-                //     headers:{
-                //         'Content-Type': "application/x-www-form-urlencoded"
-                //     },
-                //     transformRequest:[function (data) {
-                //         let ret = ''
-                //         for (let it in data) {
-                //           ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
-                //         }
-                //         return ret
-                //         }], 
-                //         data: {
-                //             id:this.upId,data:JSON.stringify(this.upObj)
-                //         }
-                //     }).then((res) => {
-                //         window.alert('修改成功！')
-                // })
-                
+                // console.log(this.upObj)s
+                var formData = new FormData($("#uploadForm" )[0]); 
+                // console.log(this.upObj)
+                var upObj = this.upObj
+                $.ajax({  
+                     url: 'http://10.3.136.179:1010/uploadgoodsimg' ,  
+                     type: 'POST',  
+                     data: formData,  
+                     async: false,  
+                     cache: false,  
+                     contentType: false,  
+                     processData: false, 
+                     success: function (res) {  
+                         upObj.imgurl = res.data
+                         // console.log(upObj)
+                     }
+                }); 
+                // console.log(this.upObj)
                 http.post('updateProduct',{id:this.upId,data:JSON.stringify(this.upObj)}).then((res) => {
                     window.alert('修改成功！')
                     this.$router.push({name:"products"})
@@ -83,14 +83,16 @@
                 var $input = $('<input type="text"/>')
                 $input.addClass(key)
                 $input.val(obj[key])
-                $input.appendTo($('.updata_r'))
+                $input.appendTo($('.updata_r #uploadForm'))
             }
             for(var key in obj){
                 var $p = $('<p/>')
                 $p.html(key)
                 $p.appendTo($('.updata_l'))
             }
-            // console.log(this.upId)
+            $('.updata_r input')[4].type = 'file'
+            $('.updata_r input')[4].name = "goodsimg"
+            // console.log($('.updata_r input')[4])
         }
     }
 </script>

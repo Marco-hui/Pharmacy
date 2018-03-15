@@ -11,6 +11,8 @@ import indexPro from './components/indexPro/indexPro.vue'
 import login from './components/login/login.vue'
 import updata from './components/updata/updata.vue'
 import updataIndex from './components/updataIndex/updataIndex.vue'
+import usersMsg from './components/usersMsg/usersMsg.vue'
+import admins from './components/admins/admins.vue'
 
 var router = new VueRouter({
     routes:[
@@ -22,7 +24,9 @@ var router = new VueRouter({
                 {path:'/products',component: products,name:'products'},
                 {path:'/users',component: users},
                 {path:'/updata',component: updata,name:'updata'},
-                {path:'/updataIndex',component: updataIndex,name:'updataIndex'}
+                {path:'/updataIndex',component: updataIndex,name:'updataIndex'},
+                {path:'/usersMsg',component: usersMsg},
+                {path:'/admins',component: admins}
             ]
         },
         {path:'/login',name:"login",component: login},
