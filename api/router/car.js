@@ -5,9 +5,8 @@ const filter = require('../utils/filter');
 module.exports={
     reg(app){
         // （点击加入清单）数据加入购物车接口
-        app.post('/addcar',filter,(req,res)=>{
+        app.post('/addcar',(req,res)=>{
             let data = req.body;
-            data.id = data.id;
             data.price = data.price*1;
             data.oprice = data.oprice*1;
             data.store = data.store*1;
@@ -20,8 +19,8 @@ module.exports={
                         res.send(apiResult(true,result1));
                     })
                 }else{
-                    db.mongodb.insert('car',data).then(result=>{
-                        res.send(apiResult(true,result));
+                    db.mongodb.insert('car',data).then(result2=>{
+                        res.send(apiResult(true,result2));
                     })
                 }
             })

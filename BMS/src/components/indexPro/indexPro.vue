@@ -108,7 +108,6 @@ export default {
                 this.tableData = res.slice(0,10);
                 this.pageNum = Math.floor(res.length/10);
                 this.show = false;
-                console.log(res)
             })
     }
 }

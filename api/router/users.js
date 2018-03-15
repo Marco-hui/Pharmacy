@@ -63,7 +63,7 @@ module.exports={
             }
         })
         // 验证是否已登录
-        app.post('islogin',filter,(req,res)=>{
+        app.post('/islogin',filter,(req,res)=>{
             res.send({status:true});
         })
     }

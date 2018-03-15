@@ -56,7 +56,7 @@ module.exports={
         })
         // 根据商品名模糊查询接口
         app.get('/fuzzy',(req,res)=>{
-            let field = req.query.field.trim();
+            var field = req.query.field.trim().replace(/[\*\^\$]/g,"");
             if(field){
                 let proname = new RegExp("^.*"+field+".*$",'ig');
                 let category = new RegExp("^.*"+field+".*$",'ig');
