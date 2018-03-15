@@ -17,9 +17,9 @@ var router = new VueRouter({
         {
             path:'/',component: home,
             children:[
-                {path:'/indexPro',component: indexPro},
+                {path:'/indexPro',component: indexPro,name:'indexpro'},
                 {path:'/header',component: header},
-                {path:'/products',component: products},
+                {path:'/products',component: products,name:'products'},
                 {path:'/users',component: users},
                 {path:'/updata',component: updata,name:'updata'},
                 {path:'/updataIndex',component: updataIndex,name:'updataIndex'}

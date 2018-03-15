@@ -1,19 +1,21 @@
 <template lang="html">
   <div class="products_box">
-    <table class="products">
+    <table class="indexProducts">
         <thead>
-            <th>
-                <input type="checkbox" />
-            </th>
-            <th v-for="(val,key) in tableTh[0]" v-if="cols.indexOf(key) > -1">{{dict[lanType][key] || key}}</th>
+            <!-- <th> -->
+                <!-- <input type="checkbox" /> -->
+            <!-- </th> -->
+            <th v-for="(val,key) in tableTh[0]" v-if="cols.indexOf(key) > -1" class="indexpro">{{dict[lanType][key] || key}}</th>
             <th>操作</th>
         </thead>
         <tbody>
             <tr v-for="(obj,idx) in tableData">
-                <td><input type="checkbox" /></td>
+                <!-- <td> -->
+                    <!-- <input type="checkbox" /> -->
+                <!-- </td> -->
                 <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1" :id="dataId" >{{val}}</td>
                 <td>
-                    <!-- <input type="button" value="修改" @click="updata(obj._id)"/> -->
+                    <input type="button" value="修改" @click="updata(obj)"/>
                 </td>
             </tr>
         </tbody>
@@ -27,14 +29,19 @@
     <div class="page">
         <span v-for="(val,idx) in pageNum" @click="page(idx)">{{idx+1}}</span>
     </div>
+    <div class="search">
+        <input type="text" placeholder="请输入想要搜索的内容"/>
+    </div>
     <spinner v-if="show"></spinner>
   </div>
 </template>
 
 <script>
-import '../products/products.css'
-import http from 'axios'
+// import '../products/products.css'
+import './indexPro.css'
+// import http from 'axios'
 import spinner from '../spinner/spinner.vue'
+import http from '../../utils/httpClient.js'
 
 export default {
     data() {
@@ -90,11 +97,16 @@ export default {
         },
         page(idx){
             this.pageIdx = idx;
-            http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+            // http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+            //     res = res.data.data.slice(0,60)
+            //     this.tableData = res.slice(idx*10,idx*10+10);
+            //     this.show = false;
+            // })
+            http.get('admingetpro').then((res) => {
                 res = res.data.data.slice(0,60)
                 this.tableData = res.slice(idx*10,idx*10+10);
                 this.show = false;
-            })
+            });
         }
     },
     mounted(){
@@ -102,14 +114,21 @@ export default {
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
                 this.dict = res.data
             });
-        http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+        // http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+        //         res = res.data.data.slice(0,60)
+        //         this.tableTh = res;
+        //         this.tableData = res.slice(0,10);
+        //         this.pageNum = Math.floor(res.length/10);
+        //         this.show = false;
+        //         console.log(res)
+        //     })
+        http.get('admingetpro').then((res) => {
                 res = res.data.data.slice(0,60)
                 this.tableTh = res;
                 this.tableData = res.slice(0,10);
                 this.pageNum = Math.floor(res.length/10);
                 this.show = false;
-                console.log(res)
-            })
+            });
     }
 }
 </script>

@@ -14,7 +14,7 @@
         "size": "规格",   
         "price": "价格",   
         "oprice": "原价",   
-        "store": "数量",   
+        "store": "库存",   
         "proof": "国药准字",   
         "factory": "生产厂商",   
         "server": "销售商" 

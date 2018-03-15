@@ -1,5 +1,6 @@
 <template>
 <div class="users">
+    <router-link to="/products" class="back" >返回</router-link>
     <span class="header" v-for="(val,key) in header"  v-if="cols.indexOf(key) > -1" >{{key}}</span>
     <div class="import">
         <div v-for="(val,idx) in addNum" class="import2">
@@ -66,7 +67,7 @@ export default {
             // console.log(this.cols.length)
         },
         updata(){
-            console.log(JSON.stringify(this.usersData[0]))
+            // console.log(JSON.stringify(this.usersData[0]))
             http({
                 method: 'post',
                 url: 'http://10.3.136.179:1010/addProduct',
@@ -84,7 +85,9 @@ export default {
                     data:JSON.stringify(this.usersData[0])
                 }
             }).then((res) => {
-                console.log(res)
+                // console.log(res)
+                window.alert('添加商品成功!')
+                this.$router.push({name:'products'})
             })
             // var $arrInput = $('.import2').find('input')
             // var $obj = {

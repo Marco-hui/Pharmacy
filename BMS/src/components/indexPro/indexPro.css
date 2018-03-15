@@ -1,6 +1,98 @@
-/* 
-* @Author: Marte
-* @Date:   2018-03-14 11:24:58
-* @Last Modified by:   Marte
-* @Last Modified time: 2018-03-14 11:39:12
-*/
+.indexProducts{
+    padding-top: 46px;
+    /*overflow: hidden;*/
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.indexProducts thead{
+    z-index: 99;
+    top: 70px;
+    left: 134px;
+    position: fixed;
+    /*background: #00B38B;*/
+}
+.indexProducts th{
+    height: 30px;
+    /*padding: 0 10px;*/
+    width: 130px;
+    border-right: 1px solid #005500;
+    background: #00B38B;
+}
+.indexProducts .pro{
+
+}
+/*.indexProducts th:nth-child(1){
+    width: 100px;
+}*/
+.indexProducts tbody{
+    height: 600px;
+    overflow: auto;
+    position: absolute;
+    top: 30px;
+}
+.indexProducts tr:nth-child(odd){
+    background: #DDDDDD;
+}
+.indexProducts tr{
+    line-height: 40px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.indexProducts td{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 14px;
+    position:relative;
+}
+/*.indexProducts tr td:nth-chlid(1){
+    width: 90px;
+}*/
+.add{
+    position: fixed;
+    top: 125px;
+    left: 142px;
+}
+.add input{
+    width: 140px;
+    height: 20px;
+}
+.indexProducts .doSoming{
+    font-size: 14px;
+}
+.indexProducts .doSoming a{
+    text-decoration:none; 
+    color: #00CC00;
+    font-size: 13px;
+}
+.indexProducts .upShow_box{
+    position: relative;
+}
+.products_box .upShow{
+    position: fixed;
+    left: 192px;
+    top: 110px;
+
+}
+.products_box .upShow input{
+    width: 140px;
+    height: 40px;
+}
+.products_box .upShow .addBtn{
+    width: 50px;
+    height: 30px;
+}
+.products_box{
+    position: relative;
+}
+.products_box .search{
+    position: absolute;
+    top: -54px;
+    left: 453px;
+    
+}
+.products_box .search input{
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
+}

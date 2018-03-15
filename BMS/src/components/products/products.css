@@ -1,12 +1,12 @@
 .products{
     padding-top: 46px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     word-wrap: break-word;
     word-break: break-all;
 }
 .products thead{
     z-index: 99;
-    top: 74px;
+    top: 70px;
     left: 134px;
     position: fixed;
     background: #fff;
@@ -14,13 +14,15 @@
 .products th{
     height: 30px;
     /*padding: 0 10px;*/
-    width: 124px;
+    width: 117px;
     border-right: 1px solid #005500;
-    background: #fff;
+    background: #00B38B;
 }
 .products tbody{
     height: 600px;
     overflow: auto;
+    position: absolute;
+    top: 30px;
 }
 .products tr:nth-child(odd){
     background: #DDDDDD;
@@ -52,6 +54,9 @@
 .products .doSoming a{
     text-decoration:none; 
     color: #00CC00;
+    font-size: 13px;
+    color:  #EBEBEB;
+    font-weight:normal;
 }
 .products .upShow_box{
     position: relative;
@@ -72,4 +77,14 @@
 }
 .products_box{
     position: relative;
+}
+.products_box .search{
+    position: absolute;
+    top: -50px;
+    left: 453px;
+}
+.products_box .search input{
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
 }

@@ -8,25 +8,21 @@ html,body{
 }
 .box{
     position: relative;
-    height: 100%;
+    /*height: 100%;*/
 }
 .container{
-    width: 1287px;
-    height: 650px;
-    overflow: auto;
+    width: 1202px;
+    height: 652px;
+    /*overflow: auto;*/
     position: absolute;
     left: 132px;
-    top: 72px;
+    top: 68px;
     border: 2px solid #005500;
 }
-.products{
-    height: 60px;
-    overflow:hidden;
-}
 .container .page{
-    width: 1268px;
+    /*width: 1268px;*/
     position: fixed;
-    right: 38px;
+    right: 140px;
     bottom: 19px;
     text-align: right;
 }
@@ -37,4 +33,7 @@ html,body{
     border: 1px solid #000;
     background: #fff;
     cursor:pointer;
+}
+.container .action{
+    background: #00B38B;
 }

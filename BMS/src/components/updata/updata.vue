@@ -3,13 +3,15 @@
         <div class="updata_l"></div>
         <div class="updata_r"></div>
         <p class="upBtn" @click="updata" >确定</p>
+        <router-link to="/products">返回</router-link>
     </div>
 </template>
 
 <script>
     import $ from 'jquery'
     import './updata.css'
-    import http from 'axios'
+    // import http from 'axios'
+    import http from '../../utils/httpClient.js'
 
     export default{
         data(){
@@ -44,25 +46,30 @@
                 }
                 // console.log(JSON.stringify(this.upObjPra.upObj))
                 // console.log(this.$route.query.obj)
-                http({
-                    method: 'post',
-                    url: 'http://10.3.136.179:1010/updateProduct',
-                    headers:{
-                        'Content-Type': "application/x-www-form-urlencoded"
-                    },
-                    transformRequest:[function (data) {
-                        let ret = ''
-                        for (let it in data) {
-                          ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
-                        }
-                        return ret
-                        }], 
-                        data: {
-                            id:this.upId,data:JSON.stringify(this.upObj)
-                        }
-                    }).then((res) => {
-                        window.alert('修改成功！')
-                })
+                // http({
+                //     method: 'post',
+                //     url: 'http://10.3.136.179:1010/updateProduct',
+                //     headers:{
+                //         'Content-Type': "application/x-www-form-urlencoded"
+                //     },
+                //     transformRequest:[function (data) {
+                //         let ret = ''
+                //         for (let it in data) {
+                //           ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
+                //         }
+                //         return ret
+                //         }], 
+                //         data: {
+                //             id:this.upId,data:JSON.stringify(this.upObj)
+                //         }
+                //     }).then((res) => {
+                //         window.alert('修改成功！')
+                // })
+                
+                http.post('updateProduct',{id:this.upId,data:JSON.stringify(this.upObj)}).then((res) => {
+                    window.alert('修改成功！')
+                    this.$router.push({name:"products"})
+                });
             }
         },
         mounted(){
