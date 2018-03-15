@@ -32,7 +32,7 @@
         },
         methods:{
             updata(){
-                console.log(this.upId)
+                // console.log(this.upId)
                 var $length = $('.updata_r input').length
                 // console.log($('.updata_r input')[1].className)
                 for(var i=0;i<$length;i++){

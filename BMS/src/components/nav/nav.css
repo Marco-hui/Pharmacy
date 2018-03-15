@@ -11,6 +11,7 @@
     text-align: center;
     border-bottom: 2px solid #005500;
     padding: 0;
+    cursor:pointer; 
 }
 .nav a{
     color: #00CC00;
