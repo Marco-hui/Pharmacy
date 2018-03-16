@@ -4,7 +4,7 @@
     position:absolute;
     border-left: 1px solid #005500;
     border-bottom: 2px solid #005500;
-    overflow: hidden;
+    overflow: auto;
 }
 .nav .users,.nav .products{
     height: 50px;

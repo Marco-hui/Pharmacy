@@ -53,9 +53,9 @@
                 //         "category" : "抗排异药物",
                 //         "category_id" : 2
                 //     }]
-                $.get('http://10.3.136.179:1010/getuser',{username:"13413611595"},res=>{
+                $.post('http://10.3.136.179:1010/updateAdmin',{_id:"5aaa84f29f9c0420e4747093",pass:"123456"},res=>{
                     console.log(res);
-                    $("#imgurl").prop('src',"http://localhost:1010"+res.data[0].headurl);
+                    // $("#imgurl").prop('src',"http://localhost:1010"+res.data[0].headurl);
                     // var $ul=$('<ul/>');
                     // var html=res.data.map(function(item){
                     //     return `<li>

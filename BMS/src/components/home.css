@@ -10,6 +10,9 @@
     position: relative;
     /*height: 100%;*/
 }
+.container{
+    position: relative;
+}
 .box .container{
     height: 536px;
     overflow-x: hidden;
@@ -36,4 +39,11 @@
 }
 .container .action{
     background: #00B38B;
+}
+
+#IndexImg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
