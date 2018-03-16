@@ -133,15 +133,25 @@ export default {
         this.$store.state.home.showIndexImg=false;
         this.show = true;
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
+<<<<<<< HEAD
             this.dictionary = res.data
         });
         http.get('admingetpro').then((res) => {
+=======
+                this.dict = res.data
+            });
+        http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+>>>>>>> 00dcbb9d43b7aeb628fc0c6830584eb375a67e1e
             res = res.data.data.slice(0,60)
             this.tableTh = res;
             this.tableData = res.slice(0,10);
             this.pageNum = Math.floor(res.length/10);
             this.show = false;
+<<<<<<< HEAD
         })
+=======
+        });
+>>>>>>> 00dcbb9d43b7aeb628fc0c6830584eb375a67e1e
     }
 }
 </script>
