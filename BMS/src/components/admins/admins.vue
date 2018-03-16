@@ -19,13 +19,19 @@
             </tbody>
         </table>
         <div class="add_box" v-if="showAdd" >
-            <input type="text" v-model="addAdmin.name" />
-            <input type="text" v-model="addAdmin.pass" />
-            <input type="button" value="确定" @click="addadmin" />
+            <div class="box">
+                <input type="text" v-model="addAdmin.name" />
+                <input type="text" v-model="addAdmin.pass" />
+                <input type="button" value="确定" @click="addadmin2" />
+                <input type="button" value="取消" @click="showAdd=false" />
+            </div>
         </div>
         <div class="re_box" v-if="showup" >
-            <input type="text" v-model="addAdmin.uppass" placeholder="请输入新密码" />
-            <input type="button" value="确定" @click="upadmin2" />
+            <div class="box">
+                <input type="text" v-model="addAdmin.uppass" placeholder="请输入新密码" />
+                <input type="button" value="确定" @click="upadmin2" />
+                <input type="button" value="取消" @click="showup=false" />
+            </div>
         </div>
         <div class="admin_srch_box">
             <input type="text" v-model="admins_srch_val" placeholder="请输入要搜索的内容" class="admins_srch_btn"/>
@@ -63,6 +69,17 @@
             }
         },
         methods:{
+            page(idx){
+                // this.pageIdx = idx;
+                this.show = true;
+                http.get('getadmins').then((res) => {
+                    // res = res.data.data.slice(60)
+                    this.tableData = res.data.data.slice(idx*10,idx*10+10);
+                    // console.log(this.tableData);
+                    this.show = false;
+                })
+                // console.log($('.page span')[3])
+            },
             admins_srch(){
                 if(this.admins_srch_val == ''){
                     // window.alert('请输入搜索内容！')

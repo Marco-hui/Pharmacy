@@ -39,6 +39,17 @@
             }
         },
         methods:{
+             page(idx){
+                // this.pageIdx = idx;
+                this.show = true;
+                http.get('getusers').then((res) => {
+                    // res = res.data.data.slice(60)
+                    this.tableData = res.data.data.slice(idx*10,idx*10+10);
+                    // console.log(this.tableData);
+                    this.show = false;
+                })
+                // console.log($('.page span')[3])
+            },
             users_srch(val){
                 this.show = true;
                 // console.log($('.users_srch_box .users_srch')[0].value)

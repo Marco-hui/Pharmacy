@@ -105,6 +105,7 @@
                         window.sessionStorage.setItem('username',res.data.data.name)
                         this.$router.push({path:"/"});
                         this.show = false;
+                        this.$store.state.showIndexImg=true;
                     }else{
                         $('.errortd').show().find('.errorword').text("用户名或密码错误，请重新输入！");
                         this.createCode();
