@@ -94,35 +94,19 @@ export default {
             }    
         },
         delMore(){
-            // http({
-            //     method: 'post',
-            //     url: 'http://10.3.136.179:1010/delProduct',
-            //     headers:{
-            //         'Content-Type': "application/x-www-form-urlencoded"
-            //     },
-            //     transformRequest:[function (data) {
-            //         let ret = ''
-            //         for (let it in data) {
-            //           ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
-            //         }
-            //         return ret
-            //     }], 
-            //     data: {
-            //         ids:JSON.stringify(this.arrDel)
-            //     }
-            // }).then((res) => {
-            //     console.log(res)
-            // })
-            http.post('delProduct',{ids:JSON.stringify(this.arrDel)}).then((res) => {
-                http.get('admingetpro').then((res) => {
-                    res = res.data.data.slice(60)
-                    this.tableTh = res;
-                    this.tableData = res.slice(0,10);
-                    this.pageNum = Math.ceil(res.length/10);
-                    this.show = false;
-                })
-                window.alert('批量删除成功!')
-            });
+            var r=confirm("确定批量删除数据？")
+            if(r){
+                http.post('delProduct',{ids:JSON.stringify(this.arrDel)}).then((res) => {
+                    http.get('admingetpro').then((res) => {
+                        res = res.data.data.slice(60)
+                        this.tableTh = res;
+                        this.tableData = res.slice(0,10);
+                        this.pageNum = Math.ceil(res.length/10);
+                        this.show = false;
+                    })
+                    window.alert('批量删除成功!')
+                });
+            }
         },
         remove(c_id,_idx,idx){
             this.tableData.splice(idx,1);  

@@ -1,3 +1,20 @@
+.users_table{
+    word-wrap: break-word;
+    word-break: break-all;
+}
 .users_table .admins{
-    width: 200px;
+    width: 466px;
+}
+.users_table td{
+    width: 376px;
+}
+.add_box{
+    position: fixed;
+    top: 120px;
+    left: 291px;
+}
+.re_box{
+    position: fixed;
+    top: 120px;
+    left: 290px;
 }

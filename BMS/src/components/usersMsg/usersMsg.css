@@ -20,12 +20,15 @@
 }
 .users_table tbody{
     height: 600px;
-    overflow: auto;
+    /*overflow: auto;*/
     position: absolute;
     top: 30px;
 }
 .users_table tr:nth-child(odd){
     background: #DDDDDD;
+}
+.users_table tr:nth-child(even){
+    background: #fff;
 }
 .users_table tr{
     line-height: 40px;

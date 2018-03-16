@@ -124,11 +124,67 @@ module.exports={
                 res.send(apiResult(result && result.length>0,result))
             })
         })
+        // 用户帐号操作——查(模糊查询)
+        app.get('/usersFuzzy',(req,res)=>{
+            let field = req.query.field;
+            console.log(field);
+            if(field){
+                field = field.trim().replace(/[\*\.\^\$]/g,"");
+                let username = new RegExp("^.*"+field+".*$",'ig');
+                let credits = new RegExp("^.*"+field+".*$",'ig');
+                let coupon = new RegExp("^.*"+field+".*$",'ig');
+                let wallet = new RegExp("^.*"+field+".*$",'ig');
+                db.mongodb.select('users',{$or:[{username},{credits},{coupon},{wallet}]}).then(result=>{
+                    res.send(apiResult(result && result.length>0,result));
+                })
+            }
+        })
+
         // 获取所有管理员信息接口
         app.get('/getadmins',filter,(req,res)=>{
             db.mongodb.select('administrator').then(result=>{
                 res.send(apiResult(result && result.length>0,result));
             })
+        })
+        // 管理员账号操作——增
+        app.post('/addAdmin',(req,res)=>{
+            let name = req.body.name;
+            let pass = req.body.pass;
+            db.mongodb.select("administrator",{name}).then(result=>{
+                if(result && result.length>0){
+                    res.send(apiResult(false,null,null,"该用户名已存在"));
+                }else{
+                    db.mongodb.insert("administrator",{name,pass}).then(result1=>{
+                        res.send(apiResult(true,result1));
+                    })
+                }
+            })
+        })
+        // 管理员帐号操作——删
+        app.post('/removeAdmin',(req,res)=>{
+            let _id = db.mongodb.objectid(req.body._id);
+            db.mongodb.delete("administrator",{_id}).then(result=>{
+                res.send(apiResult(true,result));
+            })
+        })
+        // 管理员帐号操作——改
+        app.post('/updateAdmin',(req,res)=>{
+            let _id = db.mongodb.objectid(req.body._id);
+            let pass = req.body.pass;
+            db.mongodb.update('administrator',{_id},{pass}).then(result=>{
+                res.send(apiResult(true,result));
+            })
+        })
+        // 管理员帐号操作——查(模糊查询)
+        app.get("/selectAdmin",(req,res)=>{
+            let field = req.query.field;
+            if(field){
+                field = field.trim().replace(/[\*\.\^\$]/g,"");
+                let name = new RegExp("^.*"+field+".*$",'ig');
+                db.mongodb.select('administrator',{name}).then(result=>{
+                    res.send(apiResult(result && result.length>0,result));
+                })
+            }
         })
     }
 }

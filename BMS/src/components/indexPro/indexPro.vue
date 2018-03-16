@@ -134,7 +134,7 @@ export default {
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
                 this.dict = res.data
             });
-        http.get('http://10.3.136.179:1010/admingetpro').then((res) => {
+        http.get('admingetpro').then((res) => {
             res = res.data.data.slice(0,60)
             this.tableTh = res;
             this.tableData = res.slice(0,10);

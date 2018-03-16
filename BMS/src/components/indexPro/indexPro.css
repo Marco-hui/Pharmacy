@@ -14,7 +14,7 @@
 .indexProducts th{
     height: 30px;
     /*padding: 0 10px;*/
-    width: 130px;
+    width: 125px;
     border-right: 1px solid #005500;
     background: #00B38B;
 }
@@ -26,12 +26,15 @@
 }*/
 .indexProducts tbody{
     height: 600px;
-    overflow: auto;
+    /*overflow: auto;*/
     position: absolute;
     top: 30px;
 }
 .indexProducts tr:nth-child(odd){
     background: #DDDDDD;
+}
+.indexProducts tr:nth-child(even){
+    background: #fff;
 }
 .indexProducts tr{
     line-height: 40px;
