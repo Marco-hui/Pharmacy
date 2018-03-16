@@ -6,7 +6,7 @@
             </thead>
             <tbody>
                 <tr v-for="(obj,idx) in tableData" :key="'c'+idx" :id="obj._id" class="upShow_box" style="position:relative" >
-                    <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1" :id="dataId" :key="'d'+key">{{val}}</td>
+                    <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1" :key="'d'+key">{{val}}</td>
                     </td>
                 </tr>
             </tbody>
@@ -36,7 +36,7 @@
         mounted(){
             http.get('http://localhost:8080/src/common/dicID.txt').then((res) => {
                     this.dict = res.data
-                    console.log(this.dict)
+                    // console.log(this.dict)
                 });
             http.get('getadmins').then((res) => {
                 console.log(res)
