@@ -7,7 +7,17 @@
         "store": "Store",   
         "proof": "Proof",   
         "factory": "Factory",   
-        "server": "Server" 
+        "server": "Server" ,
+        "name": "Name",
+        "pass": "Pass",
+        "coupon": "Coupon",
+        "credits": "Credits",
+        "headurl": "Headurl",
+        "password": "Password",
+        "username": "Username",
+        "wallet": "Wallet",
+        "_id": "ID",
+        "opera":"Operation"
     },
     "cn": {
         "proname":"名称",
@@ -17,6 +27,16 @@
         "store": "库存",   
         "proof": "国药准字",   
         "factory": "生产厂商",   
-        "server": "销售商" 
+        "server": "销售商" ,
+        "name": "管理员",
+        "pass": "密码",
+        "coupon": "优惠券",
+        "credits": "积分",
+        "headurl": "头像图片路径",
+        "password": "用户密码",
+        "username": "用户名",
+        "wallet": "钱包",
+        "_id": "标识",
+        "opera":"操作"
     }
 }

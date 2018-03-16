@@ -3,10 +3,13 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-import updata from './updata.js'
+import header from '../components/header/header.js'
+import home from '../components/home.js'
 
 const store = new Vuex.Store({
-    updata
+    modules:{        header,
+        home
+    }
 })
 
 export default store;

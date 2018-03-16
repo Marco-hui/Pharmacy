@@ -5,8 +5,8 @@
             <!-- <th> -->
                 <!-- <input type="checkbox" /> -->
             <!-- </th> -->
-            <th v-for="(val,key) in tableTh[0]" v-if="cols.indexOf(key) > -1" class="indexpro">{{dict[lanType][key] || key}}</th>
-            <th>操作</th>
+            <th v-for="(val,key) in tableTh[0]" v-if="cols.indexOf(key) > -1" class="indexpro">{{dictionary[$store.state.header.lanType][key] || key}}</th>
+            <th>{{dictionary[$store.state.header.lanType]["opera"]}}</th>
         </thead>
         <tbody>
             <tr v-for="(obj,idx) in tableData">
@@ -50,7 +50,7 @@ export default {
             show: false,
             cols: ['proname','size','price','oprice','store','proof','factory','server'],
             lanType: 'cn',
-            dict: {},
+            dictionary: {},
             pageNum: '',
             pageIdx: '',
             showAdd: true,
@@ -130,9 +130,10 @@ export default {
         }
     },
     mounted(){
+        this.$store.state.home.showIndexImg=false;
         this.show = true;
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
-            this.dict = res.data
+            this.dictionary = res.data
         });
         http.get('admingetpro').then((res) => {
             res = res.data.data.slice(0,60)

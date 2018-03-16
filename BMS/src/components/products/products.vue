@@ -6,7 +6,7 @@
                 <input type="checkbox" @click="allChecked" checked v-if="arrDel.length == tableData.length" key="'a'"/>
                 <input type="checkbox" @click="allChecked"  v-else key="'b'"/>
             </th>
-            <th v-for="(val,key) in tableTh[0]" v-if="cols.indexOf(key) > -1">{{dict[lanType][key] || key}}</th>
+            <th v-for="(val,key) in tableTh[0]" v-if="cols.indexOf(key) > -1">{{dictionary[$store.state.header.lanType][key] || key}}</th>
             <th class="doSoming">
                 <router-link to="/users">添加商品</router-link>
                 <a href="javascript:void(0);" @click="delMore" >批量删除</a>
@@ -52,7 +52,7 @@ export default {
             show: false,
             cols: ['proname','size','price','oprice','store','proof','factory','server'],
             lanType: 'cn',
-            dict: {},
+            dictionary: {},
             pageNum: '',
             pageIdx: '',
             showAdd: true,
@@ -158,10 +158,10 @@ export default {
         }
     },
     mounted(){
-        // console.log(this)
+        this.$store.state.home.showIndexImg=false;
         this.show = true;
         http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
-                this.dict = res.data
+                this.dictionary = res.data
             });
         http.get('admingetpro').then((res) => {
                 // console.log(res)

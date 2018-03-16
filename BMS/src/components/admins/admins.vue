@@ -2,11 +2,11 @@
     <div>
         <table class="users_table">
             <thead class="pro">
-                <th v-for="(val,key) in tableTh[0]" v-if="cols.indexOf(key) > -1" class="admins" >{{dict[lanType][key] || key}}</th>
+                <th v-for="(val,key) in tableTh[0]" v-if="cols.indexOf(key) > -1" class="admins" >{{dictionary[$store.state.header.lanType][key] || key}}</th>
             </thead>
             <tbody>
                 <tr v-for="(obj,idx) in tableData" :key="'c'+idx" :id="obj._id" class="upShow_box" style="position:relative" >
-                    <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1" :id="dataId" :key="'d'+key">{{val}}</td>
+                    <td v-for="(val,key) in obj"  v-if="cols.indexOf(key) > -1" :key="'d'+key">{{val}}</td>
                     </td>
                 </tr>
             </tbody>
@@ -29,14 +29,14 @@
                 show: false,
                 cols: ['name','pass'],
                 lanType: 'cn',
-                dict: {},
+                dictionary: {},
                 pageNum: '',
             }
         },
         mounted(){
-            http.get('http://localhost:8080/src/common/dicID.txt').then((res) => {
-                    this.dict = res.data
-                    console.log(this.dict)
+            this.$store.state.home.showIndexImg=false;
+            http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
+                    this.dictionary = res.data
                 });
             http.get('getadmins').then((res) => {
                 console.log(res)

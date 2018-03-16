@@ -24,7 +24,7 @@ module.exports={
             })
         })
         // 数据库操作——增(可多件)
-        app.post('/addProduct',(req,res)=>{
+        app.post('/addProduct',filter,(req,res)=>{
             try{
                 var data = JSON.parse(req.body.data);
             }catch(err){
@@ -39,7 +39,7 @@ module.exports={
             })
         })
         // 数据库操作——删(可多件)
-        app.post('/delProduct',(req,res)=>{
+        app.post('/delProduct',filter,(req,res)=>{
             let id = req.body.id;
             let ids = req.body.ids;
             if(id){
@@ -61,7 +61,7 @@ module.exports={
             }
         })
         // 数据库操作——改  {id:_id,data:{}}
-        app.post('/updateProduct',(req,res)=>{
+        app.post('/updateProduct',filter,(req,res)=>{
             let id = req.body.id;
             let data = JSON.parse(req.body.data);
             let _id = db.mongodb.objectid(id);
@@ -112,7 +112,6 @@ module.exports={
         // 添加商品图片接口
         app.post('/uploadgoodsimg',upload.single('goodsimg'),(req,res)=>{
             var file=req.file;
-            console.log(file);
             fs.rename(file.path,file.path+file.originalname);
             var imgurl = "src/assets/img/uploadgoods/"+file.filename+file.originalname;
             res.send(apiResult(true,imgurl));
@@ -125,9 +124,8 @@ module.exports={
             })
         })
         // 用户帐号操作——查(模糊查询)
-        app.get('/usersFuzzy',(req,res)=>{
+        app.get('/usersFuzzy',filter,(req,res)=>{
             let field = req.query.field;
-            console.log(field);
             if(field){
                 field = field.trim().replace(/[\*\.\^\$]/g,"");
                 let username = new RegExp("^.*"+field+".*$",'ig');
@@ -147,7 +145,7 @@ module.exports={
             })
         })
         // 管理员账号操作——增
-        app.post('/addAdmin',(req,res)=>{
+        app.post('/addAdmin',filter,(req,res)=>{
             let name = req.body.name;
             let pass = req.body.pass;
             db.mongodb.select("administrator",{name}).then(result=>{
@@ -161,14 +159,14 @@ module.exports={
             })
         })
         // 管理员帐号操作——删
-        app.post('/removeAdmin',(req,res)=>{
+        app.post('/removeAdmin',filter,(req,res)=>{
             let _id = db.mongodb.objectid(req.body._id);
             db.mongodb.delete("administrator",{_id}).then(result=>{
                 res.send(apiResult(true,result));
             })
         })
         // 管理员帐号操作——改
-        app.post('/updateAdmin',(req,res)=>{
+        app.post('/updateAdmin',filter,(req,res)=>{
             let _id = db.mongodb.objectid(req.body._id);
             let pass = req.body.pass;
             db.mongodb.update('administrator',{_id},{pass}).then(result=>{
@@ -176,7 +174,7 @@ module.exports={
             })
         })
         // 管理员帐号操作——查(模糊查询)
-        app.get("/selectAdmin",(req,res)=>{
+        app.get("/selectAdmin",filter,(req,res)=>{
             let field = req.query.field;
             if(field){
                 field = field.trim().replace(/[\*\.\^\$]/g,"");
