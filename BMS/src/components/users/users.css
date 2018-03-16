@@ -3,7 +3,7 @@
 }
 .users .header{
     display: inline-block;
-    width: 102px;
+    width: 98px;
     height: 30px;
     line-height: 30px;
     border-right: 1px solid #ccc;
@@ -12,6 +12,7 @@
     border-radius: 5px;
     margin-right: 4px;
     background: #00B38B;
+    padding-left: 2px;
 }
 .users .operations{
     position: absolute;
@@ -27,7 +28,7 @@
     margin-top: 10px;
 }
 .users .import2 input{
-    width: 101px;
+    width: 97px;
     height: 30px;
     border-radius: 5px;
     margin-bottom: 5px;

@@ -33,6 +33,9 @@
 .indexProducts tr:nth-child(odd){
     background: #DDDDDD;
 }
+.indexProducts tr:nth-child(even){
+    background: #fff;
+}
 .indexProducts tr{
     line-height: 40px;
     border-bottom: 1px solid #DDDDDD;
@@ -87,8 +90,8 @@
     position: relative;
 }
 .products_box .search{
-    position: absolute;
-    top: -54px;
+    position: fixed;
+    top: 22px;
     left: 453px;
     
 }

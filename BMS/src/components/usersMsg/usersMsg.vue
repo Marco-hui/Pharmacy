@@ -11,6 +11,11 @@
                 </tr>
             </tbody>
         </table>
+        <div class="users_srch_box">
+            <input type="text" placeholder="请输入搜索的内容" class="users_srch" />
+            <input type="button" value="搜索" @click="users_srch" class="users_srch_btn"></button>
+        </div>
+       
         <div class="page">
             <span v-for="idx in pageNum" @click="page(idx-1)">{{idx}}</span>
         </div>
@@ -33,20 +38,37 @@
                 pageNum: '',
             }
         },
+        methods:{
+            users_srch(val){
+                this.show = true;
+                // console.log($('.users_srch_box .users_srch')[0].value)
+                http.get('usersFuzzy',{field:$('.users_srch_box .users_srch')[0].value}).then((res) => {
+                    if(res.data.data.length == 0){
+                        window.alert('无搜索结果~')
+                    }else{
+                        // console.log(res)
+                        res = res.data.data
+                        // console.log(res)
+                        this.tableTh = res;
+                        this.tableData = res.slice(0,10);
+                        this.pageNum = Math.ceil(res.length/10)
+                        this.show = false;
+                    }
+                    // console.log(this.tableTh)
+                })
+            }
+        },
         mounted(){
             this.$store.state.home.showIndexImg=false;
             http.get('http://localhost:8080/src/common/dictionary.txt').then((res) => {
-                    this.dictionary = res.data
+                    this.dictionary = res.data;
                 });
             http.get('getusers').then((res) => {
-                // console.log(res)
                 res = res.data.data
-                // console.log(res)
                 this.tableTh = res;
                 this.tableData = res.slice(0,10);
                 this.pageNum = Math.ceil(res.length/10);
                 this.show = false;
-                // console.log(this.tableTh)
             })
         }
     }

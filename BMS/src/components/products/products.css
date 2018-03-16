@@ -30,6 +30,9 @@
 .products tr:nth-child(odd){
     background: #DDDDDD;
 }
+.products tr:nth-child(even){
+    background: #fff;
+}
 .products tr{
     line-height: 40px;
     border-bottom: 1px solid #DDDDDD;
@@ -83,8 +86,8 @@
     position: relative;
 }
 .products_box .search{
-    position: absolute;
-    top: -50px;
+    position: fixed;
+    top: 22px;
     left: 453px;
 }
 .products_box .search input{

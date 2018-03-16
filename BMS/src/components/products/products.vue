@@ -109,17 +109,20 @@ export default {
             }
         },
         remove(c_id,_idx,idx){
-            this.tableData.splice(idx,1);  
-            http.post('delProduct',{id:_idx}).then((res) => {
-                console.log(res)
-                http.get('admingetpro').then((res) => {
-                    res = res.data.data.slice(60)
-                    this.tableTh = res;
-                    this.tableData = res.slice(0,10);
-                    this.pageNum = Math.ceil(res.length/10);
-                    this.show = false;
-                })
-            });
+            var r=confirm("确定删除数据？")
+            if(r){
+                this.tableData.splice(idx,1);  
+                http.post('delProduct',{id:_idx}).then((res) => {
+                    console.log(res)
+                    http.get('admingetpro').then((res) => {
+                        res = res.data.data.slice(60)
+                        this.tableTh = res;
+                        this.tableData = res.slice(0,10);
+                        this.pageNum = Math.ceil(res.length/10);
+                        this.show = false;
+                    })
+                });
+            }
         },
         updata(obj){
             this.$router.push({name:'updata',query: {obj}})

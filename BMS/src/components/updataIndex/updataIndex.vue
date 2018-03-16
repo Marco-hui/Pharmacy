@@ -1,7 +1,11 @@
 <template>
     <div class="updata">
         <div class="updata_l"></div>
-        <div class="updata_r"></div>
+        <div class="updata_r">
+            <form id= "uploadForm">
+                
+            </form>
+        </div>
         <p class="upBtn" @click="updata" >确定</p>
         <router-link to="/indexPro">返回</router-link>
     </div>
@@ -62,6 +66,22 @@
                 //         console.log(res)
                 //         window.alert('修改成功！')
                 // })
+                var formData = new FormData($("#uploadForm" )[0]); 
+                // console.log(this.upObj)
+                var upObj = this.upObj
+                $.ajax({  
+                     url: 'http://10.3.136.179:1010/uploadgoodsimg' ,  
+                     type: 'POST',  
+                     data: formData,  
+                     async: false,  
+                     cache: false,  
+                     contentType: false,  
+                     processData: false, 
+                     success: function (res) {  
+                         upObj.imgurl = res.data
+                         // console.log(upObj)
+                     }
+                }); 
                 http.post('updateProduct',{id:this.upId,data:JSON.stringify(this.upObj)}).then((res) => {
                     window.alert('修改成功！')
                     this.$router.push({name:'indexpro'})
@@ -78,13 +98,15 @@
                 var $input = $('<input type="text"/>')
                 $input.addClass(key)
                 $input.val(obj[key])
-                $input.appendTo($('.updata_r'))
+                $input.appendTo($('.updata_r #uploadForm'))
             }
             for(var key in obj){
                 var $p = $('<p/>')
                 $p.html(key)
                 $p.appendTo($('.updata_l'))
             }
+            $('.updata_r input')[4].type = 'file'
+            $('.updata_r input')[4].name = "goodsimg"
         }
     }
 </script>

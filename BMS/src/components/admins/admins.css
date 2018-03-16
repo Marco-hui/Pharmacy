@@ -1,3 +1,39 @@
+.users_table{
+    word-wrap: break-word;
+    word-break: break-all;
+}
 .users_table .admins{
-    width: 200px;
+    width: 388px;
+}
+.users_table .admins input{
+    width: 100px;
+}
+.users_table td{
+    width: 376px;
+}
+.add_box{
+    position: fixed;
+    top: 130px;
+    left: 333px;
+}
+.re_box{
+    position: fixed;
+    top: 120px;
+    left: 612px;
+}
+.add_box input{
+    height: 30px;
+}
+.re_box input{
+    height: 30px;
+}
+.admin_srch_box{
+    position: fixed;
+    top: 22px;
+    left: 453px;
+}
+.admin_srch_box .admins_srch_btn{
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
 }
