@@ -1,0 +1,36 @@
+
+
+#locate{
+    height:1230px;
+    // background: red;
+}
+label{
+    display: block;
+    float: left;
+    font-size:0.4rem;
+    width: 15%;
+    text-align: center;
+    line-height: 1.2rem;
+}
+select{
+    float:right;
+    width:80%;
+    height: 1.2rem;
+    font-size:0.4rem;
+}
+
+textarea{
+    margin-top: 50px;
+    font-size:0.4rem;
+}
+
+button{
+    width: 2.666667rem;
+    height: 1.2rem;
+    background: #09f;
+    font-size:0.4rem;
+    float:left;
+    color:#FFF;
+    margin-top: 0.666667rem;
+    margin-left: 1.333333rem;
+}

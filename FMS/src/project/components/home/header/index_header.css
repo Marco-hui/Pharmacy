@@ -1,0 +1,71 @@
+#header{
+    /*float: left;*/
+    /*position: fixed;*/
+    /*display:flex;*/
+    /*display:flex;justify-content: space-between;*/
+    width:10.0rem;
+    height: 1.2rem;
+    background: #fff;
+    /*margin: 0 auto;*/
+}
+ #header .mint-search{
+
+    height:1.066667rem;
+}
+#header>h1{
+        float: left;
+        margin-right: 0.8rem;
+}
+#header>h1>img{
+        width: 2.666667rem;
+        height: 1.066667rem;
+        /*background:red;*/
+        padding-top: 0.1rem;
+        padding-left: 0.1rem;
+}
+
+#header .mint-searchbar{
+    padding:0;
+    background-color: #fff;
+}
+#header .mint-searchbar-core{
+    float:right;
+    border: 1px solid #d9d9d9;
+    /*width: 6.666667rem;
+    height: 0.92rem;*/
+    background: url(http://img.yaofang.cn/mobile/search.png?v=2017050201) no-repeat 0.12rem/ 0.37rem 0.37rem;
+    border-radius: 4px;
+    padding-left: 0.6rem;
+    margin: 0.16rem 0.186667rem 0 0; 
+    font-size: 0.4rem;
+    position: relative;
+}
+#header .mint-searchbar-cancel{
+    position: absolute;
+    right:0.2rem;
+    top: 0.16rem;
+    background:#ccc;
+    width: 1.066667rem;
+    height: 0.84rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: #fff;
+    font-size: 0.346667rem;
+}
+#header .mint-searchbar-inner{
+    width: 1.066667rem;
+    height:1.066667rem;
+}
+#header .mint-searchbar-inner .mint-searchbar-core{
+    float: right;
+    width: 6.0rem;
+    height: 0.866667rem;
+    border-radius: 0.133333rem;
+    padding-left: 0.6rem;
+    margin: 0.11rem 0.14rem 0 0;
+}
+#header .mint-searchbar-inner .mintui-search {
+    display: none;
+    
+}
+

@@ -1,0 +1,849 @@
+/* 1 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c575c"),
+    "id" : 1,
+    "proname" : "吗替麦考酚酯胶囊(骁悉)",
+    "size" : "0.25g*40粒",
+    "price" : 678.0,
+    "oprice" : 677.0,
+    "imgurl" : "src/assets/img/products/c1_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c575e"),
+    "id" : 2,
+    "proname" : "吗替麦考酚酯(骁悉)",
+    "size" : "500mg*20片",
+    "price" : 503.9,
+    "oprice" : 590.0,
+    "imgurl" : "src/assets/img/products/c1_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5760"),
+    "id" : 3,
+    "proname" : "咪唑立宾片(布累迪宁)",
+    "size" : "50mg*100片",
+    "price" : 721.0,
+    "oprice" : 716.0,
+    "imgurl" : "src/assets/img/products/c1_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "日本Asahikasei Pharma Corpora",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5762"),
+    "id" : 4,
+    "proname" : "他克莫司胶囊(普乐可复)",
+    "size" : "0.5mg*50粒",
+    "price" : 767.0,
+    "oprice" : 768.0,
+    "imgurl" : "src/assets/img/products/c1_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "安斯泰来制药(中国)有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5764"),
+    "id" : 5,
+    "proname" : "吗替麦考酚酯分散片(赛可平)",
+    "size" : "0.25g*40片",
+    "price" : 185.8,
+    "oprice" : 381.0,
+    "imgurl" : "src/assets/img/products/c1_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5766"),
+    "id" : 6,
+    "proname" : "麦考酚钠肠溶片(米芙)",
+    "size" : "180mg*50片",
+    "price" : 685.0,
+    "oprice" : 761.0,
+    "imgurl" : "src/assets/img/products/c1_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5768"),
+    "id" : 7,
+    "proname" : "吗替麦考酚酯分散片(顺友)",
+    "size" : "0.25g*40片",
+    "price" : 381.0,
+    "oprice" : 430.0,
+    "imgurl" : "src/assets/img/products/c1_7.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c576a"),
+    "id" : 8,
+    "proname" : "他克莫司胶囊",
+    "size" : "1mg*50粒",
+    "price" : 986.0,
+    "oprice" : 1019.0,
+    "imgurl" : "src/assets/img/products/c1_8.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "德国R.P.Scherer GmbH & Co.KG",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c576c"),
+    "id" : 9,
+    "proname" : "环孢素软胶囊",
+    "size" : "25mg*50粒",
+    "price" : 186.3,
+    "oprice" : 582.0,
+    "imgurl" : "src/assets/img/products/c1_9.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c576e"),
+    "id" : 10,
+    "proname" : "环孢素软胶囊",
+    "size" : "25mg*50粒",
+    "price" : 128.5,
+    "oprice" : 273.0,
+    "imgurl" : "src/assets/img/products/c1_10.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5770"),
+    "id" : 11,
+    "proname" : "环孢素软胶囊",
+    "size" : "0.25g*40粒",
+    "price" : 578.0,
+    "oprice" : 677.0,
+    "imgurl" : "src/assets/img/products/c1_11.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5772"),
+    "id" : 12,
+    "proname" : "环孢素软胶囊",
+    "size" : "500mg*20片",
+    "price" : 503.9,
+    "oprice" : 590.0,
+    "imgurl" : "src/assets/img/products/c1_12.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5774"),
+    "id" : 13,
+    "proname" : "环孢素软胶囊",
+    "size" : "50mg*100片",
+    "price" : 721.0,
+    "oprice" : 716.0,
+    "imgurl" : "src/assets/img/products/c1_13.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "日本Asahikasei Pharma Corpora",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5776"),
+    "id" : 14,
+    "proname" : "甲泼尼龙片",
+    "size" : "0.5mg*50粒",
+    "price" : 767.0,
+    "oprice" : 768.0,
+    "imgurl" : "src/assets/img/products/c1_14.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "安斯泰来制药(中国)有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5778"),
+    "id" : 15,
+    "proname" : "他克莫司胶囊",
+    "size" : "0.25g*40片",
+    "price" : 185.8,
+    "oprice" : 381.0,
+    "imgurl" : "src/assets/img/products/c1_15.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c577a"),
+    "id" : 16,
+    "proname" : "环孢素软胶囊",
+    "size" : "180mg*50片",
+    "price" : 685.0,
+    "oprice" : 761.0,
+    "imgurl" : "src/assets/img/products/c1_16.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c577c"),
+    "id" : 17,
+    "proname" : "吗替麦考酚酯分散片",
+    "size" : "0.25g*40片",
+    "price" : 381.0,
+    "oprice" : 430.0,
+    "imgurl" : "src/assets/img/products/c1_17.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c577e"),
+    "id" : 18,
+    "proname" : "吗替麦考酚酯胶囊",
+    "size" : "1mg*50粒",
+    "price" : 986.0,
+    "oprice" : 1019.0,
+    "imgurl" : "src/assets/img/products/c1_18.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "德国R.P.Scherer GmbH & Co.KG",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5780"),
+    "id" : 19,
+    "proname" : "甲泼尼龙片(美卓乐)",
+    "size" : "25mg*50粒",
+    "price" : 186.3,
+    "oprice" : 582.0,
+    "imgurl" : "src/assets/img/products/c1_19.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5782"),
+    "id" : 20,
+    "proname" : "西罗莫司片",
+    "size" : "25mg*50粒",
+    "price" : 128.5,
+    "oprice" : 273.0,
+    "imgurl" : "src/assets/img/products/c1_20.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "抗排异药物",
+    "category_id" : 1
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5784"),
+    "id" : 21,
+    "proname" : "吗替麦考酚酯胶囊(骁悉)",
+    "size" : "0.25g*40粒",
+    "price" : 678.0,
+    "oprice" : 677.0,
+    "imgurl" : "src/assets/img/products/c1_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "食道癌",
+    "category_id" : 2
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("5aa3dad393a94c81814c5786"),
+    "id" : 22,
+    "proname" : "吗替麦考酚酯(骁悉)",
+    "size" : "500mg*20片",
+    "price" : 503.9,
+    "oprice" : 590.0,
+    "imgurl" : "src/assets/img/products/c1_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "食道癌",
+    "category_id" : 2
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58b1"),
+    "id" : 23,
+    "proname" : "咪唑立宾片(布累迪宁)",
+    "size" : "50mg*100片",
+    "price" : 721.0,
+    "oprice" : 716.0,
+    "imgurl" : "src/assets/img/products/c1_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "日本Asahikasei Pharma Corpora",
+    "server" : "药房网",
+    "category" : "食道癌",
+    "category_id" : 2
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58b3"),
+    "id" : 24,
+    "proname" : "他克莫司胶囊(普乐可复)",
+    "size" : "0.5mg*50粒",
+    "price" : 767.0,
+    "oprice" : 768.0,
+    "imgurl" : "src/assets/img/products/c1_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "安斯泰来制药(中国)有限公司",
+    "server" : "药房网",
+    "category" : "食道癌",
+    "category_id" : 2
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58b5"),
+    "id" : 25,
+    "proname" : "吗替麦考酚酯分散片(赛可平)",
+    "size" : "0.25g*40片",
+    "price" : 185.8,
+    "oprice" : 381.0,
+    "imgurl" : "src/assets/img/products/c1_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "食道癌",
+    "category_id" : 2
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58b7"),
+    "id" : 26,
+    "proname" : "麦考酚钠肠溶片(米芙)",
+    "size" : "180mg*50片",
+    "price" : 685.0,
+    "oprice" : 761.0,
+    "imgurl" : "src/assets/img/products/c1_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG",
+    "server" : "药房网",
+    "category" : "食道癌",
+    "category_id" : 2
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58b9"),
+    "id" : 27,
+    "proname" : "吗替麦考酚酯分散片(顺友)",
+    "size" : "0.25g*40片",
+    "price" : 381.0,
+    "oprice" : 430.0,
+    "imgurl" : "src/assets/img/products/c1_7.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "其他病症",
+    "category_id" : 3
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58bb"),
+    "id" : 28,
+    "proname" : "他克莫司胶囊",
+    "size" : "1mg*50粒",
+    "price" : 986.0,
+    "oprice" : 1019.0,
+    "imgurl" : "src/assets/img/products/c1_8.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "德国R.P.Scherer GmbH & Co.KG",
+    "server" : "药房网",
+    "category" : "其他病症",
+    "category_id" : 3
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58bd"),
+    "id" : 29,
+    "proname" : "环孢素软胶囊",
+    "size" : "25mg*50粒",
+    "price" : 186.3,
+    "oprice" : 582.0,
+    "imgurl" : "src/assets/img/products/c1_9.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "其他病症",
+    "category_id" : 3
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58bf"),
+    "id" : 30,
+    "proname" : "环孢素软胶囊",
+    "size" : "25mg*50粒",
+    "price" : 128.5,
+    "oprice" : 273.0,
+    "imgurl" : "src/assets/img/products/c1_10.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "其他病症",
+    "category_id" : 3
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58c1"),
+    "id" : 31,
+    "proname" : "环孢素软胶囊",
+    "size" : "0.25g*40粒",
+    "price" : 678.0,
+    "oprice" : 677.0,
+    "imgurl" : "src/assets/img/products/c1_11.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "肾癌",
+    "category_id" : 4
+}
+
+/* 32 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58c3"),
+    "id" : 32,
+    "proname" : "环孢素软胶囊",
+    "size" : "500mg*20片",
+    "price" : 503.9,
+    "oprice" : 590.0,
+    "imgurl" : "src/assets/img/products/c1_12.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "肾癌",
+    "category_id" : 4
+}
+
+/* 33 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58c5"),
+    "id" : 33,
+    "proname" : "环孢素软胶囊",
+    "size" : "50mg*100片",
+    "price" : 721.0,
+    "oprice" : 716.0,
+    "imgurl" : "src/assets/img/products/c1_13.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "日本Asahikasei Pharma Corpora",
+    "server" : "药房网",
+    "category" : "肾癌",
+    "category_id" : 4
+}
+
+/* 34 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58c7"),
+    "id" : 34,
+    "proname" : "甲泼尼龙片",
+    "size" : "0.5mg*50粒",
+    "price" : 767.0,
+    "oprice" : 768.0,
+    "imgurl" : "src/assets/img/products/c1_14.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "安斯泰来制药(中国)有限公司",
+    "server" : "药房网",
+    "category" : "肾癌",
+    "category_id" : 4
+}
+
+/* 35 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58c9"),
+    "id" : 35,
+    "proname" : "他克莫司胶囊",
+    "size" : "0.25g*40片",
+    "price" : 185.8,
+    "oprice" : 381.0,
+    "imgurl" : "src/assets/img/products/c1_15.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "卵巢癌",
+    "category_id" : 5
+}
+
+/* 36 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58cb"),
+    "id" : 36,
+    "proname" : "环孢素软胶囊",
+    "size" : "180mg*50片",
+    "price" : 685.0,
+    "oprice" : 761.0,
+    "imgurl" : "src/assets/img/products/c1_16.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG",
+    "server" : "药房网",
+    "category" : "卵巢癌",
+    "category_id" : 5
+}
+
+/* 37 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58cd"),
+    "id" : 37,
+    "proname" : "吗替麦考酚酯分散片",
+    "size" : "0.25g*40片",
+    "price" : 381.0,
+    "oprice" : 430.0,
+    "imgurl" : "src/assets/img/products/c1_17.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "卵巢癌",
+    "category_id" : 5
+}
+
+/* 38 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58cf"),
+    "id" : 38,
+    "proname" : "吗替麦考酚酯胶囊",
+    "size" : "1mg*50粒",
+    "price" : 986.0,
+    "oprice" : 1019.0,
+    "imgurl" : "src/assets/img/products/c1_18.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "德国R.P.Scherer GmbH & Co.KG",
+    "server" : "药房网",
+    "category" : "卵巢癌",
+    "category_id" : 5
+}
+
+/* 39 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58d1"),
+    "id" : 39,
+    "proname" : "甲泼尼龙片(美卓乐)",
+    "size" : "25mg*50粒",
+    "price" : 186.3,
+    "oprice" : 582.0,
+    "imgurl" : "src/assets/img/products/c1_19.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "消化道肿瘤",
+    "category_id" : 6
+}
+
+/* 40 */
+{
+    "_id" : ObjectId("5aa3e06a93a94c81814c58d3"),
+    "id" : 40,
+    "proname" : "西罗莫司片",
+    "size" : "25mg*50粒",
+    "price" : 128.5,
+    "oprice" : 273.0,
+    "imgurl" : "src/assets/img/products/c1_20.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "消化道肿瘤",
+    "category_id" : 6
+}
+
+/* 41 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58ea"),
+    "id" : 41,
+    "proname" : "吗替麦考酚酯胶囊(骁悉)",
+    "size" : "0.25g*40粒",
+    "price" : 578.0,
+    "oprice" : 677.0,
+    "imgurl" : "src/assets/img/products/c1_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "肿瘤病辅助",
+    "category_id" : 7
+}
+
+/* 42 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58ec"),
+    "id" : 42,
+    "proname" : "吗替麦考酚酯(骁悉)",
+    "size" : "500mg*20片",
+    "price" : 503.9,
+    "oprice" : 590.0,
+    "imgurl" : "src/assets/img/products/c1_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海罗氏制药有限公司",
+    "server" : "药房网",
+    "category" : "肿瘤病辅助",
+    "category_id" : 7
+}
+
+/* 43 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58ee"),
+    "id" : 43,
+    "proname" : "咪唑立宾片(布累迪宁)",
+    "size" : "50mg*100片",
+    "price" : 721.0,
+    "oprice" : 716.0,
+    "imgurl" : "src/assets/img/products/c1_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "日本Asahikasei Pharma Corpora",
+    "server" : "药房网",
+    "category" : "肿瘤病辅助",
+    "category_id" : 7
+}
+
+/* 44 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58f0"),
+    "id" : 44,
+    "proname" : "他克莫司胶囊(普乐可复)",
+    "size" : "0.5mg*50粒",
+    "price" : 767.0,
+    "oprice" : 768.0,
+    "imgurl" : "src/assets/img/products/c1_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "安斯泰来制药(中国)有限公司",
+    "server" : "药房网",
+    "category" : "肿瘤病辅助",
+    "category_id" : 7
+}
+
+/* 45 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58f2"),
+    "id" : 45,
+    "proname" : "吗替麦考酚酯分散片(赛可平)",
+    "size" : "0.25g*40片",
+    "price" : 185.8,
+    "oprice" : 381.0,
+    "imgurl" : "src/assets/img/products/c1_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "肿瘤病辅助",
+    "category_id" : 7
+}
+
+/* 46 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58f4"),
+    "id" : 46,
+    "proname" : "麦考酚钠肠溶片(米芙)",
+    "size" : "180mg*50片",
+    "price" : 685.0,
+    "oprice" : 761.0,
+    "imgurl" : "src/assets/img/products/c1_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG",
+    "server" : "药房网",
+    "category" : "免疫调节物",
+    "category_id" : 8
+}
+
+/* 47 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58f6"),
+    "id" : 47,
+    "proname" : "吗替麦考酚酯分散片(顺友)",
+    "size" : "0.25g*40片",
+    "price" : 381.0,
+    "oprice" : 430.0,
+    "imgurl" : "src/assets/img/products/c1_7.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "杭州中美华东制药有限公司",
+    "server" : "药房网",
+    "category" : "免疫调节物",
+    "category_id" : 8
+}
+
+/* 48 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58f8"),
+    "id" : 48,
+    "proname" : "他克莫司胶囊",
+    "size" : "1mg*50粒",
+    "price" : 986.0,
+    "oprice" : 1019.0,
+    "imgurl" : "src/assets/img/products/c1_8.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "德国R.P.Scherer GmbH & Co.KG",
+    "server" : "药房网",
+    "category" : "免疫调节物",
+    "category_id" : 8
+}
+
+/* 49 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58fa"),
+    "id" : 49,
+    "proname" : "环孢素软胶囊",
+    "size" : "25mg*50粒",
+    "price" : 186.3,
+    "oprice" : 582.0,
+    "imgurl" : "src/assets/img/products/c1_9.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "免疫调节物",
+    "category_id" : 8
+}
+
+/* 50 */
+{
+    "_id" : ObjectId("5aa3e10293a94c81814c58fc"),
+    "id" : 50,
+    "proname" : "环孢素软胶囊",
+    "size" : "25mg*50粒",
+    "price" : 128.5,
+    "oprice" : 273.0,
+    "imgurl" : "src/assets/img/products/c1_10.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "category" : "免疫调节物",
+    "category_id" : 8
+}

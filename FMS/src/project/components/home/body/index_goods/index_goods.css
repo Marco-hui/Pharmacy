@@ -1,0 +1,65 @@
+#index_goods{
+    width: 10.0rem;
+    /*height: 9.333333rem;*/
+    background:#fff;
+    float: left;
+    margin-top:0.346667rem;
+}
+
+.west_title {
+    width: 10.0rem;
+    height: 1.766667rem;
+    padding: 0.336667rem 0;
+    /*position: relative;*/
+}
+.west_title h2 {
+    font-size: 0.473333rem;
+    color: #0abab7;
+    border: 0.053333rem solid #0abab7;
+    display: inline-block;
+    width: 2.24rem;
+    padding: 0.053333rem 0;
+    text-align: center;
+    border-radius: 0.16rem;
+    margin-right: 3.813333rem;
+}
+
+.Recommend_div ul li:nth-child(odd) a {
+    border-right: 1px solid #e7e7e7;
+}
+.Recommend_div ul li a {
+    float: left;
+    width: 49%;
+    height: 5rem;
+    background: #fff;
+    border-bottom: 0.026667rem solid #e7e7e7;
+    color:#000;
+    padding:10px 0;
+}
+.Recommend_div ul li a img {
+    width: 3.466667rem;
+    height: 3.466667rem;
+    margin: 0 auto;
+    display: block;
+}
+.Recommend_div ul li a .commodity {
+    margin-top: 0.18rem;
+    width: 100%;
+}
+.Recommend_div ul li a .commodity span {
+    font-size: 0.32rem;
+    padding: 2% 10%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.Recommend_div ul li a .commodity .commodity_pri {
+    font-size: 0.373333rem;
+    color: #e83c48;
+    text-align: center;
+
+}

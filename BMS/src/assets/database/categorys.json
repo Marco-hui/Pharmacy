@@ -1,0 +1,639 @@
+/* 1 */
+{
+    "_id" : ObjectId("5aa3cda093a94c81814c551f"),
+    "id" : 1,
+    "img_url" : "src/assets/img/categorys/c1_1.jpg",
+    "name" : "抗排异药物",
+    "category" : "重大疾病",
+    "category_id" : "c1"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5aa3cdb393a94c81814c552a"),
+    "id" : 2,
+    "img_url" : "src/assets/img/categorys/c1_2.jpg",
+    "name" : "食道癌",
+    "category" : "重大疾病",
+    "category_id" : "c1"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5aa3cdb393a94c81814c552c"),
+    "id" : 3,
+    "img_url" : "src/assets/img/categorys/c1_3.jpg",
+    "name" : "其他病症",
+    "category" : "重大疾病",
+    "category_id" : "c1"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5aa3cdb393a94c81814c552e"),
+    "id" : 4,
+    "img_url" : "src/assets/img/categorys/c1_4.jpg",
+    "name" : "肾癌",
+    "category" : "重大疾病",
+    "category_id" : "c1"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5aa3cdb393a94c81814c5530"),
+    "id" : 5,
+    "img_url" : "src/assets/img/categorys/c1_5.jpg",
+    "name" : "卵巢癌",
+    "category" : "重大疾病",
+    "category_id" : "c1"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5aa3cdb393a94c81814c5532"),
+    "id" : 6,
+    "img_url" : "src/assets/img/categorys/c1_6.jpg",
+    "name" : "消化道肿瘤",
+    "category" : "重大疾病",
+    "category_id" : "c1"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5aa3cdb393a94c81814c5534"),
+    "id" : 7,
+    "img_url" : "src/assets/img/categorys/c1_7.jpg",
+    "name" : "肿瘤病辅助",
+    "category" : "重大疾病",
+    "category_id" : "c1"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5aa3cdb393a94c81814c5536"),
+    "id" : 8,
+    "img_url" : "src/assets/img/categorys/c1_8.jpg",
+    "name" : "免疫调节药物",
+    "category" : "重大疾病",
+    "category_id" : "c1"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5538"),
+    "id" : 9,
+    "img_url" : "src/assets/img/categorys/c2_1.jpg",
+    "name" : "皮肤疾病",
+    "category" : "新药特药",
+    "category_id" : "c2"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c553a"),
+    "id" : 10,
+    "img_url" : "src/assets/img/categorys/c2_2.jpg",
+    "name" : "其他慢性病",
+    "category" : "新药特药",
+    "category_id" : "c2"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c553c"),
+    "id" : 11,
+    "img_url" : "src/assets/img/categorys/c2_3.jpg",
+    "name" : "甲亢",
+    "category" : "新药特药",
+    "category_id" : "c2"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c553e"),
+    "id" : 12,
+    "img_url" : "src/assets/img/categorys/c2_4.jpg",
+    "name" : "肺纤维化",
+    "category" : "新药特药",
+    "category_id" : "c2"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5540"),
+    "id" : 13,
+    "img_url" : "src/assets/img/categorys/c2_5.jpg",
+    "name" : "眼科病",
+    "category" : "新药特药",
+    "category_id" : "c2"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5542"),
+    "id" : 14,
+    "img_url" : "src/assets/img/categorys/c2_6.jpg",
+    "name" : "糖尿病",
+    "category" : "新药特药",
+    "category_id" : "c2"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5544"),
+    "id" : 15,
+    "img_url" : "src/assets/img/categorys/c2_7.jpg",
+    "name" : "肺病",
+    "category" : "新药特药",
+    "category_id" : "c2"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5546"),
+    "id" : 16,
+    "img_url" : "src/assets/img/categorys/c2_8.jpg",
+    "name" : "艾滋病",
+    "category" : "新药特药",
+    "category_id" : "c2"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5548"),
+    "id" : 17,
+    "img_url" : "src/assets/img/categorys/c3_1.jpg",
+    "name" : "脑血管疾病",
+    "category" : "慢性疾病",
+    "category_id" : "c3"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c554a"),
+    "id" : 18,
+    "img_url" : "src/assets/img/categorys/c3_2.jpg",
+    "name" : "低血压用药",
+    "category" : "慢性疾病",
+    "category_id" : "c3"
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c554c"),
+    "id" : 19,
+    "img_url" : "src/assets/img/categorys/c3_3.jpg",
+    "name" : "预防血栓药",
+    "category" : "慢性疾病",
+    "category_id" : "c3"
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c554e"),
+    "id" : 20,
+    "img_url" : "src/assets/img/categorys/c3_4.jpg",
+    "name" : "血液类疾病",
+    "category" : "慢性疾病",
+    "category_id" : "c3"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5550"),
+    "id" : 21,
+    "img_url" : "src/assets/img/categorys/c3_5.jpg",
+    "name" : "心力衰竭",
+    "category" : "慢性疾病",
+    "category_id" : "c3"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5552"),
+    "id" : 22,
+    "img_url" : "src/assets/img/categorys/c3_6.jpg",
+    "name" : "脉管炎",
+    "category" : "慢性疾病",
+    "category_id" : "c3"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5554"),
+    "id" : 23,
+    "img_url" : "src/assets/img/categorys/c3_7.jpg",
+    "name" : "肺心病",
+    "category" : "慢性疾病",
+    "category_id" : "c3"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("5aa3cdd493a94c81814c5556"),
+    "id" : 24,
+    "img_url" : "src/assets/img/categorys/c3_8.jpg",
+    "name" : "静脉曲张",
+    "category" : "慢性疾病",
+    "category_id" : "c3"
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c555c"),
+    "id" : 25,
+    "img_url" : "src/assets/img/categorys/c4_1.jpg",
+    "name" : "儿童风热感冒药",
+    "category" : "家庭常备",
+    "category_id" : "c4"
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c555e"),
+    "id" : 26,
+    "img_url" : "src/assets/img/categorys/c4_2.jpg",
+    "name" : "小儿消化不良",
+    "category" : "家庭常备",
+    "category_id" : "c4"
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5560"),
+    "id" : 27,
+    "img_url" : "src/assets/img/categorys/c4_3.jpg",
+    "name" : "小儿祛火",
+    "category" : "家庭常备",
+    "category_id" : "c4"
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5562"),
+    "id" : 28,
+    "img_url" : "src/assets/img/categorys/c4_4.jpg",
+    "name" : "儿童咽喉肿痛",
+    "category" : "家庭常备",
+    "category_id" : "c4"
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5564"),
+    "id" : 29,
+    "img_url" : "src/assets/img/categorys/c4_5.jpg",
+    "name" : "小儿退热",
+    "category" : "家庭常备",
+    "category_id" : "c4"
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5566"),
+    "id" : 30,
+    "img_url" : "src/assets/img/categorys/c4_6.jpg",
+    "name" : "儿童风寒感冒药",
+    "category" : "家庭常备",
+    "category_id" : "c4"
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5568"),
+    "id" : 31,
+    "img_url" : "src/assets/img/categorys/c4_7.jpg",
+    "name" : "智力发育迟缓",
+    "category" : "家庭常备",
+    "category_id" : "c4"
+}
+
+/* 32 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c556a"),
+    "id" : 32,
+    "img_url" : "src/assets/img/categorys/c4_8.jpg",
+    "name" : "小儿抽动症",
+    "category" : "家庭常备",
+    "category_id" : "c4"
+}
+
+/* 33 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c556c"),
+    "id" : 33,
+    "img_url" : "src/assets/img/categorys/c5_1.jpg",
+    "name" : "三七粉",
+    "category" : "中医养生",
+    "category_id" : "c5"
+}
+
+/* 34 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c556e"),
+    "id" : 34,
+    "img_url" : "src/assets/img/categorys/c5_2.jpg",
+    "name" : "羚羊角粉",
+    "category" : "中医养生",
+    "category_id" : "c5"
+}
+
+/* 35 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5570"),
+    "id" : 35,
+    "img_url" : "src/assets/img/categorys/c5_3.jpg",
+    "name" : "天麻粉",
+    "category" : "中医养生",
+    "category_id" : "c5"
+}
+
+/* 36 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5572"),
+    "id" : 36,
+    "img_url" : "src/assets/img/categorys/c5_4.jpg",
+    "name" : "山药粉",
+    "category" : "中医养生",
+    "category_id" : "c5"
+}
+
+/* 37 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5574"),
+    "id" : 37,
+    "img_url" : "src/assets/img/categorys/c5_5.jpg",
+    "name" : "川贝粉",
+    "category" : "中医养生",
+    "category_id" : "c5"
+}
+
+/* 38 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5576"),
+    "id" : 38,
+    "img_url" : "src/assets/img/categorys/c5_6.jpg",
+    "name" : "血竭粉",
+    "category" : "中医养生",
+    "category_id" : "c5"
+}
+
+/* 39 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5578"),
+    "id" : 39,
+    "img_url" : "src/assets/img/categorys/c5_7.jpg",
+    "name" : "丹参粉",
+    "category" : "中医养生",
+    "category_id" : "c5"
+}
+
+/* 40 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c557a"),
+    "id" : 40,
+    "img_url" : "src/assets/img/categorys/c5_8.jpg",
+    "name" : "沉香粉",
+    "category" : "中医养生",
+    "category_id" : "c5"
+}
+
+/* 41 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c557c"),
+    "id" : 41,
+    "img_url" : "src/assets/img/categorys/c6_1.jpg",
+    "name" : "关节护理",
+    "category" : "医疗器械",
+    "category_id" : "c6"
+}
+
+/* 42 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c557e"),
+    "id" : 42,
+    "img_url" : "src/assets/img/categorys/c6_2.jpg",
+    "name" : "跌打损伤护理",
+    "category" : "医疗器械",
+    "category_id" : "c6"
+}
+
+/* 43 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5580"),
+    "id" : 43,
+    "img_url" : "src/assets/img/categorys/c6_3.jpg",
+    "name" : "成人腹泻护理",
+    "category" : "医疗器械",
+    "category_id" : "c6"
+}
+
+/* 44 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5582"),
+    "id" : 44,
+    "img_url" : "src/assets/img/categorys/c6_4.jpg",
+    "name" : "骨质增生护理贴膏",
+    "category" : "医疗器械",
+    "category_id" : "c6"
+}
+
+/* 45 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5584"),
+    "id" : 45,
+    "img_url" : "src/assets/img/categorys/c6_5.jpg",
+    "name" : "风湿关节护理",
+    "category" : "医疗器械",
+    "category_id" : "c6"
+}
+
+/* 46 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5586"),
+    "id" : 46,
+    "img_url" : "src/assets/img/categorys/c6_6.jpg",
+    "name" : "肩部护理",
+    "category" : "健康超市",
+    "category_id" : "c6"
+}
+
+/* 47 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5588"),
+    "id" : 47,
+    "img_url" : "src/assets/img/categorys/c6_7.jpg",
+    "name" : "腿部护理",
+    "category" : "健康超市",
+    "category_id" : "c6"
+}
+
+/* 48 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c558a"),
+    "id" : 48,
+    "img_url" : "src/assets/img/categorys/c6_8.jpg",
+    "name" : "空气净化器/雾化器",
+    "category" : "营养保健",
+    "category_id" : "c6"
+}
+
+/* 49 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c558c"),
+    "id" : 49,
+    "img_url" : "src/assets/img/categorys/c7_1.jpg",
+    "name" : "抗疲劳",
+    "category" : "营养保健",
+    "category_id" : "c7"
+}
+
+/* 50 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c558e"),
+    "id" : 50,
+    "img_url" : "src/assets/img/categorys/c7_2.jpg",
+    "name" : "补充维生素E",
+    "category" : "营养保健",
+    "category_id" : "c7"
+}
+
+/* 1 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5590"),
+    "id" : 51,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "补充铬",
+    "category" : "营养保健",
+    "category_id" : "c7"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5592"),
+    "id" : 52,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "补充β-胡萝卜素",
+    "category" : "营养保健",
+    "category_id" : "c7"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5594"),
+    "id" : 53,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "补充维生素C+E",
+    "category" : "营养保健",
+    "category_id" : "c7"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5596"),
+    "id" : 54,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "维生素D",
+    "category" : "营养保健",
+    "category_id" : "c7"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c5598"),
+    "id" : 55,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "多种维生素",
+    "category" : "营养保健",
+    "category_id" : "c7"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c559a"),
+    "id" : 56,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "维生素C",
+    "category" : "营养保健",
+    "category_id" : "c7"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c559c"),
+    "id" : 57,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "假牙清洁",
+    "category" : "健康超市",
+    "category_id" : "c8"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c559e"),
+    "id" : 58,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "漱口水",
+    "category" : "健康超市",
+    "category_id" : "c8"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c55a0"),
+    "id" : 59,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "牙膏/牙粉",
+    "category" : "健康超市",
+    "category_id" : "c8"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c55a2"),
+    "id" : 60,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "中老年奶粉",
+    "category" : "健康超市",
+    "category_id" : "c8"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c55a4"),
+    "id" : 61,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "孕妈洗护",
+    "category" : "健康超市",
+    "category_id" : "c8"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c55a6"),
+    "id" : 62,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "产后修复",
+    "category" : "健康超市",
+    "category_id" : "c8"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c55a8"),
+    "id" : 63,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "宝贝洗护",
+    "category" : "健康超市",
+    "category_id" : "c8"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5aa3cdf893a94c81814c55aa"),
+    "id" : 64,
+    "img_url" : "src/assets/img/categorys/c7_3.jpg",
+    "name" : "婴儿湿巾",
+    "category" : "健康超市",
+    "category_id" : "c8"
+}

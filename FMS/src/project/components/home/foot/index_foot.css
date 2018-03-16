@@ -1,0 +1,48 @@
+#footer{
+    background:#f0f0f0;
+    width: 10.0rem;
+    height: 1.373333rem;
+}
+#footer ul {
+    /*float: left;*/
+}
+#footer ul li a {
+    float: left;
+    width: 25%;
+    /*height: 30px;*/
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    /*background:red;*/
+}
+#footer ul li .on:active,#footer ul li .on:hover{
+    /*background:red;*/
+    color: skyblue;
+}
+#footer ul li a i{
+    display:block;
+    width: 1.1rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    font-size:0.666667rem;
+    line-height: 0.8rem;
+    /*height: 30px;*/
+    /*background:blue;*/
+}
+#footer ul li a .icon-tubiao-{
+    font-size:0.866667rem;
+
+
+}
+#footer ul li a span{
+    display:block;
+    /*width: 1.1rem;*/
+    height: 0.56rem;
+    margin: 0 auto;
+    font-size: 0.373333rem;
+}
+
+
+
+

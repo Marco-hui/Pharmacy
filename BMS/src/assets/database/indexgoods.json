@@ -1,0 +1,959 @@
+/* 1 */
+{
+    "_id" : ObjectId("5aa3987193a94c81814c50fc"),
+    "id" : 1,
+    "proname" : "多维元素片(金施尔康)",
+    "size" : "100片",
+    "price" : "99.90",
+    "oprice" : "104.90",
+    "imgurl" : "src/assets/img/indexgoods/f1_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "中美上海施贵宝制药有限公司",
+    "server" : "药房网",
+    "type" : "f1"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5aa39af693a94c81814c5146"),
+    "id" : 2,
+    "proname" : "[特例] 蓝芩口服液",
+    "size" : "10ml*12支",
+    "price" : "27.10",
+    "oprice" : "40.60",
+    "imgurl" : "src/assets/img/indexgoods/f1_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "扬子江药业集团有限公司",
+    "server" : "药房网",
+    "type" : "f1"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5aa39b5893a94c81814c5152"),
+    "id" : 3,
+    "proname" : "红枣黑糖（固体饮料）",
+    "size" : "250g",
+    "price" : "28.90",
+    "oprice" : "33.00",
+    "imgurl" : "src/assets/img/indexgoods/f1_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "云南古训红糖有限公司",
+    "server" : "药房网",
+    "type" : "f1"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5aa39db393a94c81814c5192"),
+    "id" : 4,
+    "proname" : "[特例] 利鲁唑片(力如太)",
+    "size" : "50mg*56片",
+    "price" : "4300.00",
+    "oprice" : "4715.00",
+    "imgurl" : "src/assets/img/indexgoods/f2_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "赛诺菲（北京）制药有限公司",
+    "server" : "药房网",
+    "type" : "f2"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5aa39db393a94c81814c5194"),
+    "id" : 5,
+    "proname" : "[特例] 尼洛替尼胶囊(达希纳)",
+    "size" : "200mg*120粒",
+    "price" : "36100.00",
+    "oprice" : "36101.00",
+    "imgurl" : "src/assets/img/indexgoods/f2_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG 瑞士",
+    "server" : "药房网",
+    "type" : "f2"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5aa39db393a94c81814c5196"),
+    "id" : 6,
+    "proname" : "[特例] 依维莫司片(飞尼妥)",
+    "size" : "5mg*30片",
+    "price" : "7500.00",
+    "oprice" : "7501.00",
+    "imgurl" : "src/assets/img/indexgoods/f2_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG Switzerland 瑞士",
+    "server" : "药房网",
+    "type" : "f2"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5aa39db393a94c81814c5198"),
+    "id" : 7,
+    "proname" : "辅酶Q10胶囊",
+    "size" : "10mg*60粒",
+    "price" : "7.70",
+    "oprice" : "15.60",
+    "imgurl" : "src/assets/img/indexgoods/f2_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海衡山药业有限公司",
+    "server" : "药房网",
+    "type" : "f2"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5aa39db393a94c81814c519a"),
+    "id" : 8,
+    "proname" : "[特例] 参莲胶囊",
+    "size" : "0.5g*72粒",
+    "price" : "54.90",
+    "oprice" : "118.60",
+    "imgurl" : "src/assets/img/indexgoods/f2_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "山西澳迩药业有限公司",
+    "server" : "药房网",
+    "type" : "f2"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5aa39db393a94c81814c519c"),
+    "id" : 9,
+    "proname" : "卡莫氟片",
+    "size" : "50mg*24片",
+    "price" : "53.80",
+    "oprice" : "70.00",
+    "imgurl" : "src/assets/img/indexgoods/f2_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f2"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5aa3a04793a94c81814c51e0"),
+    "id" : 10,
+    "proname" : "[特例] 利鲁唑片(力如太)",
+    "size" : "50mg*56片",
+    "price" : "4300.00",
+    "oprice" : "4715.00",
+    "imgurl" : "src/assets/img/indexgoods/f3_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "赛诺菲（北京）制药有限公司",
+    "server" : "药房网",
+    "type" : "f3"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5aa3a04793a94c81814c51e2"),
+    "id" : 11,
+    "proname" : "[特例] 甲磺酸阿帕替尼片",
+    "size" : "0.425*14片",
+    "price" : "2858.10",
+    "oprice" : "2859.10",
+    "imgurl" : "src/assets/img/indexgoods/f3_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG 瑞士",
+    "server" : "药房网",
+    "type" : "f3"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5aa3a04793a94c81814c51e4"),
+    "id" : 12,
+    "proname" : "[特例] 甲磺酸奥希替尼片(泰瑞沙)",
+    "size" : "80mg*30片",
+    "price" : "51000.00",
+    "oprice" : "51001.00",
+    "imgurl" : "src/assets/img/indexgoods/f3_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG Switzerland 瑞士",
+    "server" : "药房网",
+    "type" : "f3"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5aa3a04793a94c81814c51e6"),
+    "id" : 13,
+    "proname" : "辅酶Q10胶囊",
+    "size" : "10mg*60粒",
+    "price" : "7.70",
+    "oprice" : "15.60",
+    "imgurl" : "src/assets/img/indexgoods/f3_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海衡山药业有限公司",
+    "server" : "药房网",
+    "type" : "f3"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5aa3a04893a94c81814c51e8"),
+    "id" : 14,
+    "proname" : "[特例] 参莲胶囊",
+    "size" : "0.5g*72粒",
+    "price" : "54.90",
+    "oprice" : "118.00",
+    "imgurl" : "src/assets/img/indexgoods/f3_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "山西澳迩药业有限公司",
+    "server" : "药房网",
+    "type" : "f3"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5aa3a04893a94c81814c51ea"),
+    "id" : 15,
+    "proname" : "卡莫氟片",
+    "size" : "50mg*24片",
+    "price" : "53.80 ",
+    "oprice" : "70.50",
+    "imgurl" : "src/assets/img/indexgoods/f3_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f3"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5aa3a22d93a94c81814c521c"),
+    "id" : 16,
+    "proname" : "[特例] 肾宝片(电商款)",
+    "size" : "126片",
+    "price" : "190.00",
+    "oprice" : "323.00",
+    "imgurl" : "src/assets/img/indexgoods/f4_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "赛诺菲（北京）制药有限公司",
+    "server" : "药房网",
+    "type" : "f4"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("5aa3a22d93a94c81814c521e"),
+    "id" : 17,
+    "proname" : "锁阳固精丸",
+    "size" : "9g*10丸",
+    "price" : "18.80",
+    "oprice" : "30.80",
+    "imgurl" : "src/assets/img/indexgoods/f4_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG 瑞士",
+    "server" : "药房网",
+    "type" : "f4"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5aa3a22d93a94c81814c5220"),
+    "id" : 18,
+    "proname" : "五子衍宗丸",
+    "size" : "60g",
+    "price" : "15.80",
+    "oprice" : "29.00",
+    "imgurl" : "src/assets/img/indexgoods/f4_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG Switzerland 瑞士",
+    "server" : "药房网",
+    "type" : "f4"
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5aa3a22d93a94c81814c5222"),
+    "id" : 19,
+    "proname" : "[特例] 复方阿胶浆(无蔗糖)",
+    "size" : "20ml*48支",
+    "price" : "298.50",
+    "oprice" : "499.00",
+    "imgurl" : "src/assets/img/indexgoods/f4_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海衡山药业有限公司",
+    "server" : "药房网",
+    "type" : "f4"
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5aa3a22d93a94c81814c5224"),
+    "id" : 20,
+    "proname" : "五子衍宗丸",
+    "size" : "60g",
+    "price" : "15.80",
+    "oprice" : "29.00",
+    "imgurl" : "src/assets/img/indexgoods/f4_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "山西澳迩药业有限公司",
+    "server" : "药房网",
+    "type" : "f4"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("5aa3a22d93a94c81814c5226"),
+    "id" : 21,
+    "proname" : "[特例] 男宝胶囊",
+    "size" : "0.3g*20粒",
+    "price" : "15.50",
+    "oprice" : "16.50",
+    "imgurl" : "src/assets/img/indexgoods/f4_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f4"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("5aa3a43493a94c81814c525a"),
+    "id" : 22,
+    "proname" : "[特例] 阿维A胶囊(方希)",
+    "size" : "10mg*30粒",
+    "price" : "48.00",
+    "oprice" : "62.00",
+    "imgurl" : "src/assets/img/indexgoods/f5_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "赛诺菲（北京）制药有限公司",
+    "server" : "药房网",
+    "type" : "f5"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("5aa3a43493a94c81814c525c"),
+    "id" : 23,
+    "proname" : "[特例] 健胃消食片",
+    "size" : "0.8g*32片",
+    "price" : "6.80 ",
+    "oprice" : "13.00",
+    "imgurl" : "src/assets/img/indexgoods/f5_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG 瑞士",
+    "server" : "药房网",
+    "type" : "f5"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("5aa3a43493a94c81814c525e"),
+    "id" : 24,
+    "proname" : "[特例] 朗迪碳酸钙D3片(II)",
+    "size" : "60片",
+    "price" : "30.20",
+    "oprice" : "69.00",
+    "imgurl" : "src/assets/img/indexgoods/f5_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG Switzerland 瑞士",
+    "server" : "药房网",
+    "type" : "f5"
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("5aa3a43493a94c81814c5260"),
+    "id" : 25,
+    "proname" : "[特例] 复方感冒灵颗粒",
+    "size" : "14g*15袋/盒",
+    "price" : "19.50",
+    "oprice" : "24.00",
+    "imgurl" : "src/assets/img/indexgoods/f5_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海衡山药业有限公司",
+    "server" : "药房网",
+    "type" : "f5"
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("5aa3a43493a94c81814c5262"),
+    "id" : 26,
+    "proname" : "肤专家软膏",
+    "size" : "20g",
+    "price" : "21.90",
+    "oprice" : "29.00",
+    "imgurl" : "src/assets/img/indexgoods/f5_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "山西澳迩药业有限公司",
+    "server" : "药房网",
+    "type" : "f5"
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("5aa3a43493a94c81814c5264"),
+    "id" : 27,
+    "proname" : "八绝膏抑菌乳膏",
+    "size" : "15g",
+    "price" : "88.00",
+    "oprice" : "89.00",
+    "imgurl" : "src/assets/img/indexgoods/f5_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f5"
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("5aa3a5c693a94c81814c528e"),
+    "id" : 28,
+    "proname" : "善存牌天然维生素E鱼油软胶囊",
+    "size" : "180g(1.0g*60)*3瓶",
+    "price" : "218.00",
+    "oprice" : "250.00",
+    "imgurl" : "src/assets/img/indexgoods/f6_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "赛诺菲（北京）制药有限公司",
+    "server" : "药房网",
+    "type" : "f6"
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("5aa3a5c693a94c81814c5290"),
+    "id" : 29,
+    "proname" : "初乳钙压片糖果",
+    "size" : "1.0g*60片",
+    "price" : "60.00",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f6_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG 瑞士",
+    "server" : "药房网",
+    "type" : "f6"
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("5aa3a5c693a94c81814c5292"),
+    "id" : 30,
+    "proname" : "绿健园牌天然维生素E软胶囊",
+    "size" : "0.25g*160粒/瓶",
+    "price" : "75.00",
+    "oprice" : "60.00",
+    "imgurl" : "src/assets/img/indexgoods/f6_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG Switzerland 瑞士",
+    "server" : "药房网",
+    "type" : "f6"
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("5aa3a5c693a94c81814c5294"),
+    "id" : 31,
+    "proname" : "善存小佳维咀嚼片（香甜柠檬味）",
+    "size" : "78g(1.95g*40片)",
+    "price" : "52.00",
+    "oprice" : "70.00",
+    "imgurl" : "src/assets/img/indexgoods/f6_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海衡山药业有限公司",
+    "server" : "药房网",
+    "type" : "f6"
+}
+
+/* 32 */
+{
+    "_id" : ObjectId("5aa3a5c693a94c81814c5296"),
+    "id" : 32,
+    "proname" : "蚊不叮",
+    "size" : "70ml",
+    "price" : "5.80",
+    "oprice" : "9.80",
+    "imgurl" : "src/assets/img/indexgoods/f6_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "山西澳迩药业有限公司",
+    "server" : "药房网",
+    "type" : "f6"
+}
+
+/* 33 */
+{
+    "_id" : ObjectId("5aa3a5c693a94c81814c5298"),
+    "id" : 33,
+    "proname" : "金箍棒L-乳酸钙冲剂",
+    "size" : "5g*30包",
+    "price" : "88.00",
+    "oprice" : "50.00",
+    "imgurl" : "src/assets/img/indexgoods/f6_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f6"
+}
+
+/* 34 */
+{
+    "_id" : ObjectId("5aa3a6f893a94c81814c52b8"),
+    "id" : 34,
+    "proname" : "红景天口服液",
+    "size" : "10ml*12支",
+    "price" : "118.00",
+    "oprice" : "119.00",
+    "imgurl" : "src/assets/img/indexgoods/f7_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "赛诺菲（北京）制药有限公司",
+    "server" : "药房网",
+    "type" : "f7"
+}
+
+/* 35 */
+{
+    "_id" : ObjectId("5aa3a6f893a94c81814c52ba"),
+    "id" : 35,
+    "proname" : "叁血安和饮",
+    "size" : "3g*30袋",
+    "price" : "268.00 ",
+    "oprice" : "269.00",
+    "imgurl" : "src/assets/img/indexgoods/f7_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG 瑞士",
+    "server" : "药房网",
+    "type" : "f7"
+}
+
+/* 36 */
+{
+    "_id" : ObjectId("5aa3a6f893a94c81814c52bc"),
+    "id" : 36,
+    "proname" : "排浊平肤饮",
+    "size" : "90g",
+    "price" : "288.00",
+    "oprice" : "289.00",
+    "imgurl" : "src/assets/img/indexgoods/f7_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG Switzerland 瑞士",
+    "server" : "药房网",
+    "type" : "f7"
+}
+
+/* 37 */
+{
+    "_id" : ObjectId("5aa3a6f893a94c81814c52be"),
+    "id" : 37,
+    "proname" : "西洋参片",
+    "size" : "1g",
+    "price" : "3.20",
+    "oprice" : "4.20",
+    "imgurl" : "src/assets/img/indexgoods/f7_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海衡山药业有限公司",
+    "server" : "药房网",
+    "type" : "f7"
+}
+
+/* 38 */
+{
+    "_id" : ObjectId("5aa3a6f893a94c81814c52c0"),
+    "id" : 38,
+    "proname" : "桑椹",
+    "size" : "kg/袋",
+    "price" : "0.08",
+    "oprice" : "1.09",
+    "imgurl" : "src/assets/img/indexgoods/f7_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "山西澳迩药业有限公司",
+    "server" : "药房网",
+    "type" : "f7"
+}
+
+/* 39 */
+{
+    "_id" : ObjectId("5aa3a6f893a94c81814c52c2"),
+    "id" : 39,
+    "proname" : "络石藤",
+    "size" : "kg/袋",
+    "price" : "0.05",
+    "oprice" : "1.05",
+    "imgurl" : "src/assets/img/indexgoods/f7_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f7"
+}
+
+/* 40 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5330"),
+    "id" : 40,
+    "proname" : "玫瑰黑糖（固体饮料）",
+    "size" : "250g",
+    "price" : "28.90",
+    "oprice" : "33.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_1.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "赛诺菲（北京）制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 41 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5332"),
+    "id" : 41,
+    "proname" : "三七粉",
+    "size" : "3g*30袋(极细粉)",
+    "price" : "267.90",
+    "oprice" : "299.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_2.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG 瑞士",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 42 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5334"),
+    "id" : 42,
+    "proname" : "姜枣茶（代用茶）",
+    "size" : "6g*12袋",
+    "price" : "35.00",
+    "oprice" : "40.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_3.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "Novartis Pharma Stein AG Switzerland 瑞士",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 43 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5336"),
+    "id" : 43,
+    "proname" : "玫瑰花冠茶（代用茶）",
+    "size" : "12g*12袋",
+    "price" : "36.80",
+    "oprice" : "40.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_4.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "上海衡山药业有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 44 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5338"),
+    "id" : 44,
+    "proname" : "[特例] 枸橼酸西地那非片",
+    "size" : "50mg*10片",
+    "price" : "175.00",
+    "oprice" : "346.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_5.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "山西澳迩药业有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 45 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c533a"),
+    "id" : 45,
+    "proname" : "[特例] 溴吡斯的明片",
+    "size" : "60mg*60片",
+    "price" : "117.00",
+    "oprice" : "34.60",
+    "imgurl" : "src/assets/img/indexgoods/f8_6.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 46 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c533c"),
+    "id" : 46,
+    "proname" : "[特例] 阿达帕林凝胶(达芙文)",
+    "size" : "30g",
+    "price" : "53.30",
+    "oprice" : "61.30",
+    "imgurl" : "src/assets/img/indexgoods/f8_7.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 47 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c533e"),
+    "id" : 47,
+    "proname" : "[特例] 枸橼酸西地那非片",
+    "size" : "100mg*5片",
+    "price" : "358.00 ",
+    "oprice" : "496.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_8.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 48 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5340"),
+    "id" : 48,
+    "proname" : "左甲状腺素钠片",
+    "size" : "50ug*100片",
+    "price" : "28.80 ",
+    "oprice" : "39.90",
+    "imgurl" : "src/assets/img/indexgoods/f8_9.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 49 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5342"),
+    "id" : 49,
+    "proname" : "[特例] 枸橼酸西地那非片",
+    "size" : "50mg*1片",
+    "price" : "23.90",
+    "oprice" : "49.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_10.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 50 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5344"),
+    "id" : 50,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_11.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 1 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5346"),
+    "id" : 51,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_12.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5348"),
+    "id" : 52,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_13.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c534a"),
+    "id" : 53,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_14.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c534c"),
+    "id" : 54,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_15.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c534e"),
+    "id" : 55,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_16.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5350"),
+    "id" : 56,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_17.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5352"),
+    "id" : 57,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_18.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5354"),
+    "id" : 58,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_19.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5356"),
+    "id" : 59,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_20.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5aa3ab0f93a94c81814c5358"),
+    "id" : 60,
+    "proname" : "[特例] 戊酸雌二醇片/雌二醇环丙孕酮片复合包装",
+    "size" : "21片",
+    "price" : "71.90",
+    "oprice" : "80.00",
+    "imgurl" : "src/assets/img/indexgoods/f8_21.jpg",
+    "store" : 100,
+    "proof" : "国药准字H10930015",
+    "factory" : "齐鲁制药有限公司",
+    "server" : "药房网",
+    "type" : "f8"
+}
