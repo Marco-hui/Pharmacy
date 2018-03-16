@@ -1,0 +1,126 @@
+.lcbg{
+	background: #f0f0f0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.lclist{
+	/* height: 2.16rem; */
+	display: flex;
+	justify-content: space-between;
+	margin: 0.4rem 0;
+	background: #fff;
+	ul{
+		padding-left: 0.533333rem;
+		margin: 0.4rem 0;
+		li{
+			float: left;
+			text-align: center;
+			font-size: 0.333333rem;
+			margin-right: 0.266667rem;
+			padding: 0.266667rem 0;
+			img{
+				width: 1.066667rem;
+				height: 1.066667rem;
+			}
+			em{
+				font-style: normal;
+			}
+		}
+	}
+	div{
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: 0.373333rem;
+		span{
+			display: flex;
+			justify-content: center; 
+		}
+		i{
+			margin: 0 0.213333rem;
+			font-style: normal;
+			color: #e83c48;
+		}
+		
+	}
+}
+div.addr{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.2rem 0;
+	background: #fffbef;
+	a{
+		display: block;
+		height: 1.333333rem;
+		width: 8.96rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size:0.533333rem;
+		background: #4990e0;
+		color: #fff;
+		border: 0;
+		border-radius: 0.133333rem;
+
+	}
+}
+.lcadd{
+	background: #fff;
+	padding: 0.386667rem  0;
+	margin-bottom: 0.4rem;
+	li{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0.373333rem;
+		padding: 0.2rem 0;
+		span{
+			font-size: 0.4rem;
+		}
+		span:first-child{
+			color: #000;
+		}
+		span:nth-child(2){
+			color: #e83c48;
+		}
+	}
+}
+.another{
+	flex: 1;
+}
+.ordersettlement{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.426667rem 0.266667rem;
+	background: #fff;
+	p{
+		width: 75%;
+		font-size: 0.373333rem;
+		color: #e83c48;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* align-items: center; */
+		em{
+			font-style: normal;
+		}
+	}
+	span{
+		width: 25%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		input{
+			width: 2.626667rem;
+			height: 0.906667rem;
+			background: #e83c48;
+			color: #fff;
+			border: 0;
+			font-size: 0.373333rem;
+		}
+
+	}
+}

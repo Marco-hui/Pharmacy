@@ -1,0 +1,20 @@
+#index_list {
+    width: 10.0rem;
+    padding: 0.4rem 0;
+    background: #fff;
+    margin-top: 0.4rem;
+    float: left;
+}
+#index_list .coment_foot{
+    float: left;
+    width: 10.0rem;
+    /*padding:30px;*/
+}
+#index_list .coment_foot .copy {
+    /*float: left;*/
+
+    text-align: center;
+    line-height: 0.6rem;
+    color: #848689;
+    font-size: 0.24rem;
+}

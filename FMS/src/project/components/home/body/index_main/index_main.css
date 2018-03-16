@@ -1,0 +1,123 @@
+#main{
+    float: left;
+}
+.abzy {
+    float: left;
+    margin: 0.373333rem auto 0;
+    background: #fff;
+}
+.abzy .limit_title {
+    width: 10.0rem;
+    height: 1.733333rem;
+    padding: 0.346667rem 0;
+}
+
+.limit_title .limit_title_pic, .west_title .limit_title_pic {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.266667rem;
+}
+.abzy ul {
+    padding-left: 0.16rem;
+    overflow: hidden;
+    width: 94%;
+    margin: 0 auto;
+}
+.abzy ul li {
+    float: left;
+    width: 18%;
+    margin-right: 0.183333rem;
+    margin-bottom: 0.4rem;
+}
+.abzy ul li img {
+    width: 100%;
+    height: 0.746667rem;
+}
+
+/*秒杀活动*/
+
+.activity{
+    float: left;
+    margin: 0.373333rem auto 0;
+    background:#fff;
+    /*position: relative;*/
+}
+.activity .limit_title{
+    /*position: relative;*/
+    
+}
+.activity .limit_title .limit_title_i{
+    z-index: 3;
+    display:block;
+    width: 1.106667rem;
+    height: 0.453333rem;
+    margin-right: 0.26rem;
+    /* color: #575757; */
+    font-size: 0.22rem;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    /*background:red;*/
+
+}
+.activity .limit_title .limit_title_i .a1{
+    display:block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    text-decoration: none;
+}
+.activity .limit_title .limit_title_i .a1 span{
+    position: absolute;
+}
+
+.activity ul li{
+    width: 3.253333rem;
+    height: 3.946667rem;
+    border-right: 0.013333rem solid #ccc;
+    margin-bottom: 0.666667rem;
+    position: relative;
+    float: left;
+}
+.activity ul li {
+    display:block;
+    float: left;
+}
+.activity ul li:nth-child(3){
+    border:none;
+}
+.activity ul li img{
+    width: 150px;
+    height: 2.0rem;
+    display: block;
+    margin: 0 auto;
+}
+.activity ul li .limit_name {
+    width: 3.306667rem;
+    /*height: 1.28rem;*/
+    margin-top: 0.19rem;
+}
+.activity ul li .limit_name span {
+    font-size: 0.32rem;
+    width: 2.666667rem;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin:0 0.266667rem;
+    color:#000;
+}
+.activity ul li p {
+    color: #b6b6b6;
+    font-size: 0.32rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 0.453333rem;
+    margin-top: 0.066667rem;
+}
+.activity ul li p i{
+    color:red;
+}

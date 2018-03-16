@@ -1,0 +1,186 @@
+#herd {
+    float: left;
+    width: 100%;
+    height: 96px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+    position: fixed;
+    border:none;
+}
+#herd .black{
+    width: 30px;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-top: 17px;
+    font-size: 27px;
+
+}
+#herd .aa {
+    margin-top:4px;
+    display: inline-block;
+    width:88px;
+    height: 80px;
+    position: relative;
+    float: left;
+    text-align: center;
+    /*background:red;*/
+}
+#herd input {
+    width: 70%;
+    height: 70px;
+    float: left;
+    border: 1px solid #d9d9d9;
+    background: #f4f5f9 url(../img/search.png) no-repeat 0.12rem/ 40px 40px;
+    font-size:24px;
+    padding: 0 66px 0 66px;
+    border-radius: 1px;
+    margin:13px 2px;
+    
+}
+
+#herd .close {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    right: 145px;
+    top: 32px;
+}
+#herd span {
+    width: 15%;
+    height: 70px;
+    float: left;
+    line-height: 68px;
+    display: inline-block;
+    background: #4990e0;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 12px;
+    margin-top: 12px;
+    font-size: 27px;
+    color: #fff;
+}
+#sct {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 96px 0 97px 0;
+}
+.tab_tool {
+    height: 90px;
+    width: 100%;
+}
+.tab_tool ul .on:hover{
+    color: #4990e0;
+
+    border-bottom: 3px solid #4990e0;
+}
+.tab_tool ul .category {
+    float: left;
+    width: 60%;
+    text-align: center;
+    line-height: 90px;
+    background: #f8f8f8;
+    color: #999;
+    border-bottom: 3px solid #f8f8f8;
+    font-size: 24px;
+
+}
+.tab_boxs {
+    width: 100%;
+}
+.tab_boxs>div {
+    width: 100%;
+    height: 217px;
+}
+.tab_boxs>div ul li {
+    border-bottom: 1px solid #e7e7e7;
+    width: 100%;
+    height: 217px;
+    background-color: #fff;
+}
+.tab_boxs>div ul li dt {
+    width: 30%;
+    height: 217px;
+    float: left;
+}
+.tab_boxs div ul li dt img {
+    width: 172px;
+    height: 172px;
+    margin: 19px auto 0;
+    display: block;
+}
+.tab_boxs>div ul li dd {
+    float: left;
+    width: 70%;
+    height: 217px;
+}
+.tab_boxs>div ul li dd p {
+    margin-bottom: 7px;
+    margin-top:10px;
+    margin-left: 44px;
+    font-size: 28px;
+}
+.tab_boxs>div ul li dd p:first-child {
+    margin-top: 43px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tab_boxs>div ul li dd p span {
+    font-size: 24px;
+    color: #999;
+}
+.tab_boxs>div ul li dd p .prices {
+    color: #e83c48;
+    font-size: 32px;
+}
+
+#foot {
+    width: 100%;
+    height: 1.373333rem;
+    border-top: 1px solid #ddd;
+    background: #f0f0f0;
+    position: fixed;
+    bottom: 0;
+}
+#foot ul li a {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#foot ul li i {
+    display: inline-block;
+    width: 100px;
+    height: 160px;
+    
+}
+#foot ul .home  i {
+    background: url(../img/menuIcon.png) no-repeat 0 0;
+    background-size: 200px 400px;
+}
+#foot ul .find  i {
+    background: url(../img/menuIcon.png) no-repeat -100px -100px;
+    background-size: 200px 400px;
+}
+#foot ul .buy  i {
+    background: url(../img/menuIcon.png) no-repeat 0 -200px;
+    background-size: 200px 400px;
+}
+#foot ul .my  i {
+    background: url(../img/menuIcon.png) no-repeat 0 -300px;
+    background-size: 200px 400px;
+}
+
+
+.tab {
+    background: #f8f8f8;
+    height: 100%;
+    overflow: hidden;
+    border:1px solid #ccc;
+    border-bottom: none;
+}
