@@ -1,27 +1,27 @@
 #herd {
     float: left;
     width: 100%;
-    height: 96px;
+    height: 1.28rem;
     background: #fff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0.013333rem solid #ddd;
     margin: 0 auto;
     position: fixed;
     border:none;
 }
 #herd .black{
-    width: 30px;
-    height: 50px;
-    border-radius: 4px;
-    margin-left: 20px;
-    margin-top: 17px;
-    font-size: 27px;
+    width: 0.4rem;
+    height: 0.666667rem;
+    border-radius: 0.053333rem;
+    margin-left: 0.266667rem;
+    margin-top: 0.226667rem;
+    font-size: 0.36rem;
 
 }
 #herd .aa {
-    margin-top:4px;
+    margin-top:0.053333rem;
     display: inline-block;
-    width:88px;
-    height: 80px;
+    width:1.173333rem;
+    height: 1.066667rem;
     position: relative;
     float: left;
     text-align: center;
@@ -29,63 +29,63 @@
 }
 #herd input {
     width: 70%;
-    height: 70px;
+    height: 0.933333rem;
     float: left;
-    border: 1px solid #d9d9d9;
-    background: #f4f5f9 url(../img/search.png) no-repeat 0.12rem/ 40px 40px;
-    font-size:24px;
-    padding: 0 66px 0 66px;
-    border-radius: 1px;
-    margin:13px 2px;
+    border: 0.013333rem solid #d9d9d9;
+    background: #f4f5f9 url(../img/search.png) no-repeat 0.12rem/ 0.533333rem 0.533333rem;
+    font-size:0.32rem;
+    padding: 0 0.88rem 0 0.88rem;
+    border-radius: 0.013333rem;
+    margin:0.173333rem 0.026667rem;
     
 }
 
 #herd .close {
-    width: 35px;
-    height: 35px;
+    width: 0.466667rem;
+    height: 0.466667rem;
     display: inline-block;
     position: absolute;
-    right: 145px;
-    top: 32px;
+    right: 1.933333rem;
+    top: 0.426667rem;
+    border-color:#fff;
 }
 #herd span {
     width: 15%;
-    height: 70px;
+    height: 0.933333rem;
     float: left;
-    line-height: 68px;
+    line-height: 0.906667rem;
     display: inline-block;
     background: #4990e0;
     text-align: center;
-    border-radius: 4px;
-    margin-left: 12px;
-    margin-top: 12px;
-    font-size: 27px;
+    border-radius: 0.053333rem;
+    margin-left: 0.16rem;
+    margin-top: 0.16rem;
+    font-size: 0.36rem;
     color: #fff;
 }
 #sct {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding: 96px 0 97px 0;
+    padding: 1.28rem 0 1.293333rem 0;
 }
 .tab_tool {
-    height: 90px;
     width: 100%;
 }
 .tab_tool ul .on:hover{
     color: #4990e0;
 
-    border-bottom: 3px solid #4990e0;
+    border-bottom: 0.04rem solid #4990e0;
 }
 .tab_tool ul .category {
     float: left;
     width: 60%;
     text-align: center;
-    line-height: 90px;
+    line-height: 1.2rem;
     background: #f8f8f8;
     color: #999;
-    border-bottom: 3px solid #f8f8f8;
-    font-size: 24px;
+    border-bottom: 0.04rem solid #f8f8f8;
+    font-size: 0.32rem;
 
 }
 .tab_boxs {
@@ -93,50 +93,50 @@
 }
 .tab_boxs>div {
     width: 100%;
-    height: 217px;
+    height: 2.893333rem;
 }
 .tab_boxs>div ul li {
     border-bottom: 1px solid #e7e7e7;
     width: 100%;
-    height: 217px;
     background-color: #fff;
 }
+
 .tab_boxs>div ul li dt {
     width: 30%;
-    height: 217px;
+    height: 2.893333rem;
     float: left;
 }
 .tab_boxs div ul li dt img {
-    width: 172px;
-    height: 172px;
-    margin: 19px auto 0;
+    width: 2.293333rem;
+    height: 2.293333rem;
+    margin: 0.253333rem auto 0;
     display: block;
 }
 .tab_boxs>div ul li dd {
     float: left;
     width: 70%;
-    height: 217px;
+    height: 2.893333rem;
 }
 .tab_boxs>div ul li dd p {
-    margin-bottom: 7px;
-    margin-top:10px;
-    margin-left: 44px;
-    font-size: 28px;
+    margin-bottom: 0.093333rem;
+    margin-top:0.133333rem;
+    margin-left: 0.586667rem;
+    font-size: 0.373333rem;
 }
 .tab_boxs>div ul li dd p:first-child {
-    margin-top: 43px;
+    margin-top: 0.573333rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 .tab_boxs>div ul li dd p span {
-    font-size: 24px;
+    font-size: 0.32rem;
     color: #999;
 }
 .tab_boxs>div ul li dd p .prices {
     color: #e83c48;
-    font-size: 32px;
+    font-size: 0.426667rem;
 }
 
 #foot {
@@ -155,25 +155,25 @@
 
 #foot ul li i {
     display: inline-block;
-    width: 100px;
-    height: 160px;
+    width: 1.333333rem;
+    height: 2.133333rem;
     
 }
 #foot ul .home  i {
     background: url(../img/menuIcon.png) no-repeat 0 0;
-    background-size: 200px 400px;
+    background-size: 2.666667rem 5.333333rem;
 }
 #foot ul .find  i {
-    background: url(../img/menuIcon.png) no-repeat -100px -100px;
-    background-size: 200px 400px;
+    background: url(../img/menuIcon.png) no-repeat -1.333333rem -1.333333rem;
+    background-size: 2.666667rem 5.333333rem;
 }
 #foot ul .buy  i {
-    background: url(../img/menuIcon.png) no-repeat 0 -200px;
-    background-size: 200px 400px;
+    background: url(../img/menuIcon.png) no-repeat 0 -2.666667rem;
+    background-size: 2.666667rem 5.333333rem;
 }
 #foot ul .my  i {
-    background: url(../img/menuIcon.png) no-repeat 0 -300px;
-    background-size: 200px 400px;
+    background: url(../img/menuIcon.png) no-repeat 0 -4.0rem;
+    background-size: 2.666667rem 5.333333rem;
 }
 
 
@@ -181,6 +181,6 @@
     background: #f8f8f8;
     height: 100%;
     overflow: hidden;
-    border:1px solid #ccc;
+    border:0.013333rem solid #ccc;
     border-bottom: none;
 }

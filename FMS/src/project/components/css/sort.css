@@ -8,76 +8,75 @@
 }
 .tab_li {
     float: left;
-    border-right: 2px solid #ddd;
+    border-right: 0.026667rem solid #ddd;
     background: #fff;
     overflow: auto;
-    height: 1100px;
     overflow-x: hidden;
     position: fixed;
-    top:96px;
+    top:1.28rem;
 }
 
 .tab_li ul li {
-    width: 200px;
-    line-height: 100px;
-    border-bottom: 1px solid #ddd;
+    width: 2.666667rem;
+    line-height: 1.333333rem;
+    border-bottom: 0.013333rem solid #ddd;
     text-align: center;
-    font-size: 28px;
+    font-size: 0.373333rem;
 }
 .tab_box {
     float: left;
     width: 65%;
-    margin-left: 240px;
-    height: 1100px;
+    margin-left: 3.2rem;
+    height: 14.666667rem;
     overflow: auto;
     overflow-x: hidden;
-    font-size: 24px;
+    font-size: 0.32rem;
 }
 .tab_box_tit span {
     width: 100%;
-    height: 100px;
+    height: 1.333333rem;
     display: inline-block;
-    line-height: 100px;
-    font-size:28px;
+    line-height: 1.333333rem;
+    font-size:0.373333rem;
 }
 .tab_box_tit span a{
     display:inline;
 }
 .tab_box_tit span i {
     display: inline-block;
-    width: 8px;
-    height: 29px;
+    width: 0.106667rem;
+    height: 0.386667rem;
     background: #333;
-    margin: 0 18px 0 9px;
+    margin: 0 0.24rem 0 0.12rem;
 }
 .tab_box_tit span img {
-    width: 38px;
-    height: 38px;
+    width: 0.506667rem;
+    height: 0.506667rem;
     float: right;
-    margin-top: 35px;
+    margin-top: 0.466667rem;
 }
 .tab_box_tit ul li {
     float: left;
-    width: 220px;
-    height: 230px;
+    width: 2.933333rem;
+    height: 3.066667rem;
     background: #fff;
-    margin:0 20px 20px 0;
+    margin:0 0.266667rem 0.266667rem 0;
 }
 .tab_box_tit ul li dl dt img {
-    width: 142px;
-    height: 98px;
+    width: 1.893333rem;
+    height: 1.306667rem;
     display: block;
-    margin: 42px auto 37px;
+    margin: 0.56rem auto 0.493333rem;
 }
 .tab_box_tit ul li dl dd p {
-    font-size: 22px;
+    font-size: 0.293333rem;
     color: #666;
     text-align: center;
 }
 #foot {
     width: 100%;
     height: 1.373333rem;
-    border-top: 1px solid #ddd;
+    border-top: 0.013333rem solid #ddd;
     background: #f0f0f0;
     position: fixed;
     bottom: 0;
@@ -90,25 +89,25 @@
 
 #foot ul li i {
     display: inline-block;
-    width: 100px;
-    height: 160px;
+    width: 1.333333rem;
+    height: 2.133333rem;
     
 }
 #foot ul .home  i {
     background: url(../img/menuIcon.png) no-repeat 0 0;
-    background-size: 200px 400px;
+    background-size: 2.666667rem 5.333333rem;
 }
 #foot ul .find  i {
-    background: url(../img/menuIcon.png) no-repeat -100px -100px;
-    background-size: 200px 400px;
+    background: url(../img/menuIcon.png) no-repeat -1.333333rem -1.333333rem;
+    background-size: 2.666667rem 5.333333rem;
 }
 #foot ul .buy  i {
-    background: url(../img/menuIcon.png) no-repeat 0 -200px;
-    background-size: 200px 400px;
+    background: url(../img/menuIcon.png) no-repeat 0 -2.666667rem;
+    background-size: 2.666667rem 5.333333rem;
 }
 #foot ul .my  i {
-    background: url(../img/menuIcon.png) no-repeat 0 -300px;
-    background-size: 200px 400px;
+    background: url(../img/menuIcon.png) no-repeat 0 -4.0rem;
+    background-size: 2.666667rem 5.333333rem;
 }
 
 
@@ -116,6 +115,6 @@
     background: #f8f8f8;
     height: 100%;
     overflow: hidden;
-    border:1px solid #ccc;
+    border:0.013333rem solid #ccc;
     border-bottom: none;
 }

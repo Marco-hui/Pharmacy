@@ -1,0 +1,67 @@
+【提示：接口里的ip要根据开的服务器而改变】
+
+
+【后台】
+注册成功添加用户接口：http://10.3.136.179:1010/adminreg  参数：{username,password} 请求类型：post
+注册验证用户名是否存在接口：http://10.3.136.179:1010/adminlogin   参数：{username}  请求类型：get
+登录验证接口：http://10.3.136.179:1010/adminlogin   参数：{username,password}  请求类型：get
+获取所有商品数据接口：http://10.3.136.179:1010/admingetpro   参数：无  请求类型：get
+
+数据库操作——增：http://10.3.136.179:1010/addProduct   参数：{data} 例子：｛｝|| {data:JSON.stringify(data)}  请求类型：post
+
+数据库操作——删：http://10.3.136.179:1010/delProduct   参数：{id} || {ids:JSON.stringify([ ])}  请求类型：post
+
+数据库操作——改：http://10.3.136.179:1010/updateProduct   参数：{id:_id,data:JSON.stringify(data)}  请求类型：post
+添加商品图片接口：http://10.3.136.179:1010/uploadgoodsimg   参数：（通过form表单input传参）文件    请求类型：post
+
+数据库操作——查（首页商品模糊查询）：http://10.3.136.179:1010/indexfuzzy    参数：｛field｝ 请求类型：get
+数据库操作——查（列表页商品模糊查询）：http://10.3.136.179:1010/goodsfuzzy    参数：｛field｝ 请求类型：get
+
+验证是否已登录：http://10.3.136.179:1010/islogin    参数：无    请求类型：post  
+
+获取所有用户信息接口：http://10.3.136.179:1010/getusers    参数：无    请求类型：get  
+用户帐号操作——查(模糊查询)：http://10.3.136.179:1010/usersFuzzy   参数：{field}    请求类型：get
+
+获取所有管理员信息接口：http://10.3.136.179:1010/getadmins    参数：无    请求类型：get  
+管理员帐号操作——增 ：http://10.3.136.179:1010/addAdmin   参数：{name,pass}    请求类型：post 
+管理员帐号操作——删 ：http://10.3.136.179:1010/removeAdmin   参数：{_id}    请求类型：post 
+管理员帐号操作——改(密码) ：http://10.3.136.179:1010/updateAdmin   参数：{_id,pass}    请求类型：post 
+管理员帐号操作——查(模糊查询) ：http://10.3.136.179:1010/selectAdmin   参数：{field}    请求类型：get 
+
+
+【前台】
+
+[注册]
+注册成功添加用户接口：http://10.3.136.179:1010/register   参数：{username,password} 请求类型：post
+注册验证用户名是否存在接口：http://10.3.136.179:1010/login   参数：{username}  请求类型：get
+
+[登录]
+登录验证接口：http://10.3.136.179:1010/login   参数：{username,password}  请求类型：get
+
+[首页]
+获取首页商品数据接口：http://10.3.136.179:1010/indexgoods   参数：无	请求类型：get
+
+[分类页]
+获取分类页商品数据接口：http://10.3.136.179:1010/categorys  参数：无	请求类型：get
+
+[列表页]
+获取列表页商品数据接口：http://10.3.136.179:1010/products  参数：｛category_id[,order:1 || -1]｝ 请求类型：get
+
+[详情页]
+获取详情页商品数据接口：http://10.3.136.179:1010/apro      参数：｛id:_id｝ 请求类型：get
+添加商品到购物车接口：http://10.3.136.179:1010/addcar      参数：数据对象   请求类型：post
+
+[搜索]
+商品模糊查询接口：http://10.3.136.179:1010/fuzzy        参数：｛field｝ 请求类型：get
+
+[购物车]
+获取购物车列表数据接口：http://10.3.136.179:1010/getcar        参数：｛username｝ 请求类型：get
+增加减少商品数量更新数据接口：http://10.3.136.179:1010/changeqty     参数：｛_id,qty｝ 请求类型：post
+删除购物车商品（支持单件、多选、全部删除）：http://10.3.136.179:1010/removepro    参数：{_id}(单) || {_id:JSON.stringify([])}(多) || {username}(全)  请求类型：post
+生成订单接口：http://10.3.136.179:1010/createorder   参数：{}    请求类型：post
+获取订单接口：http://10.3.136.179:1010/getorder     参数：{username}   请求类型：get
+提交订单（付款成功）接口：http://10.3.136.179:1010/putorder    参数：{_id,proids}   请求类型：post
+
+[我的]
+获取当前用户信息接口：http://10.3.136.179:1010/getuser     参数：{username}   请求类型：get
+修改头像（文件上传）接口：http://10.3.136.179:1010/uploadfile   参数：（通过form表单input传参）文件&username     请求类型：post

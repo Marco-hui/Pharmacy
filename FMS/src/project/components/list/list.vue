@@ -7,7 +7,7 @@
             <router-link to="/search">
                 <input placeholder="马应龙" type="text"/>
             </router-link>
-            <img class="close" src="http://img.yaofang.cn/mobile/close02.png"/>
+            <img class="close" src="../img/close02.png"/>
             <span>
                 <a herf="#" style="top: 0;left:12px;color: #fff;">搜索</a>
             </span>
@@ -25,7 +25,7 @@
                     <div class="good_list">
                         <div class="good_html">
                             <ul class="search_goods">
-                                <li v-for="(obj,idx) in dataset">
+                                <li class="caoli" v-for="(obj,idx) in dataset">
                                     <router-link :to="'details/'+obj._id">
                                         <dl>
                                             <dt>

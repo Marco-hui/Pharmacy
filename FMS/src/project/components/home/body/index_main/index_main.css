@@ -13,7 +13,7 @@
 }
 
 .limit_title .limit_title_pic, .west_title .limit_title_pic {
-    width: 100%;
+    width: 10rem;
     height: 100%;
     margin-bottom: 0.266667rem;
 }

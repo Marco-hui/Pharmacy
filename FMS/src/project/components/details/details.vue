@@ -2,7 +2,7 @@
     <div id="details">
         <div id="com_header">
            <div id="com_header_nav" v-for="(obj, idx) in dataset">
-                <a id='com_header_a'><img src="http://img.yaofang.cn/mobile//top_left.png" @click="com_header_a" ></a>
+                <a id="com_header_a"><img src="http://img.yaofang.cn/mobile//top_left.png" @click="com_header_a" ></a>
                 <h1 class="goods_name" >{{obj.proname}}</h1>
                 <div class="menu"  @click="show=!show">
                     <img src="http://img.yaofang.cn/mobile/home.png">

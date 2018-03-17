@@ -1,10 +1,20 @@
 
+#details{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 #details_body{
     width: 10.0rem;
     overflow:auto;
-    height:14.95rem;
+    /*height:14.95rem;*/
     /*float: left;*/
+
     background:#fff;
+    float: left;
+        flex: 1;
+    overflow-y: auto;
 }
 
 
@@ -122,9 +132,11 @@
     float: left;
     height: 1.626667rem;
     width: 10.0rem;
-    border-top: 1px solid #ddd;
+    border-top: 0.026667rem solid #ddd;
     background: #f0f0f0;
-    font-size: 30px;  
+    font-size: 0.4rem;  
+    /*position: fixed;*/
+    bottom:0;   
 }
 .buyCont a{
      color:#000;
@@ -193,7 +205,7 @@
 
 .aaa,.bbb{
     position: fixed;
-  /*  opacity: 1;*/
+    opacity: 0.7;
     top:6.666667rem;
     left:2.666667rem;
     background:#ccc;
@@ -202,7 +214,7 @@
     border-radius:100px;
     line-height: 2.5rem;
     text-align: center;
-    font-size: 44px;
+    font-size: 0.586667rem;
     font-weight: bolder;
     color:#fff;
 }

@@ -7,7 +7,7 @@
             <router-link to="/search">
                 <input placeholder="万艾可" type="text"/>
             </router-link>
-            <img class="close" src="http://img.yaofang.cn/mobile/close02.png"/>
+            <img class="close" src="../img/close02.png"/>
             <span>
                 <a herf="#" style="top: 0;left:12px;color: #fff;">搜索</a>
             </span>

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-03-12 16:31:11
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-13 14:58:39
+* @Last Modified time: 2018-03-16 17:21:23
 */
 #com_header{
     float: left;
@@ -19,14 +19,14 @@
     text-decoration: none;
     color: #333;
     display: block;
-    padding:0.333333rem 0.2rem 0.373333rem 0.2rem;
-    margin-left: 0.133333rem;
+    /*padding:0.333333rem 0.2rem 0.373333rem 0.2rem;*/
+    margin-left: 0.103333rem;
 }
-#com_header_nav>img {
+#com_header_nav #com_header_a>img {
     float: left;
-    width: 0.293333rem;
+    height: 0.6rem;
     float: left;
-    margin-top: 0.373333rem;
+    margin-top:0.266667rem;
     margin-left: 0.346667rem;
     display:block;
 }
@@ -41,7 +41,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-left: 160px;
+    margin-left: 2.133333rem;
     color:#fff;
 }
 

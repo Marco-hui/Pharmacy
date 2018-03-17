@@ -7,12 +7,13 @@
             <hkmain></hkmain>
             <hkgoods></hkgoods>
             <hklist></hklist>
-            <div id="scrollTop" @click="toTop">
+            <!-- <div id="scrollTop" @click="toTop">
                 <img src="../img/top.png" height="82" width="82" alt="" />
-            </div>
+            </div> -->
         </div>
-        <hkfoot></hkfoot>
-
+        <div id="index_hkfoot1">
+            <hkfoot></hkfoot>
+        </div>
     </div>
 </template>
 
@@ -39,9 +40,10 @@
             hklist
         },
         methods: {
-            toTop(){
-                $("#index_body").animate({scrollTop:0},400);  
-            }
+            // toTop(){
+            //     console.log(666)
+            //     $("#index_body").animate({scrollTop:0},400);  
+            // }
         }
     }
 </script>

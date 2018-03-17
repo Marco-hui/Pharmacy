@@ -16,7 +16,10 @@
             <button id="btn_yes">确定</button>
             <router-link to="/order"><button>取消</button></router-link>
         </div>
-        <hkfoot></hkfoot>
+        <div id="region3">
+             <hkfoot></hkfoot>
+        </div>
+       
     </div>
 </template>
 

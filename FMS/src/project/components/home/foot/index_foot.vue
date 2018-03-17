@@ -18,19 +18,6 @@
     import '../../../font_493gddw3ht0ozuxr/iconfont.css';
     import './index_foot.css'
     export default {
-  //       data () {
-  //   return {
-  //    list: ['苹果', '香蕉', '菠萝', '芒果'],
-  //     ind: ''
-  //   }
-  // },
-  // methods: {
-  //   changeBgc: function (index) {
-  //     this.ind = index
-  //   }
-  // }
-
-
 
     }
 </script>
